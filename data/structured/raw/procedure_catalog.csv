@@ -1,0 +1,13 @@
+procedure_code,procedure_description,procedure_category,billing_modifier,allowed_amount,coverage_policy_id,is_active
+CPT-99213,Office Visit Established Patient Level 3,Eval & Management,,150.00,HLT-POL-001,TRUE
+CPT-99214,Office Visit Established Patient Level 4,Eval & Management,,220.00,HLT-POL-001,TRUE
+CPT-99215,Office Visit Established Patient Level 5,Eval & Management,,280.00,HLT-POL-001,TRUE
+CPT-93000,Electrocardiogram Routine,Radiology,,45.00,HLT-POL-001,TRUE
+CPT-93306,Echocardiogram Complete,Cardiovascular,,980.00,HLT-PROD-01,TRUE
+CPT-72170,Pelvis X-Ray,Radiology,,120.00,HLT-POL-001,TRUE
+CPT-73720,Lower Extremity MRI,Radiology,,750.00,HLT-POL-001,TRUE
+CPT-43239,Upper GI Endoscopy,Surgery,,850.00,HLT-PROD-01,TRUE
+CPT-45378,Colonoscopy,Surgery,,1100.00,HLT-PROD-01,TRUE
+CPT-20550,Injection of tendon sheath,Surgery,,200.00,HLT-POL-001,TRUE
+CPT-99203,Office Visit New Patient Level 3,Eval & Management,,210.00,HLT-POL-001,TRUE
+CPT-97110,Therapeutic Exercise,Physical Therapy,,85.00,HLT-POL-001,TRUE

@@ -1,0 +1,16 @@
+member_id,first_name,last_name,date_of_birth,gender,address_line1,address_line2,city,state,zip_code,phone_number,email,plan_id,effective_date,termination_date,primary_provider_id
+M-1001,John,Smith,1985-06-15,M,1010 Sunset Blvd,,Los Angeles,CA,90001,310-555-1001,john.smith@email.com,PLAN-001,2025-01-01,NULL,PROV-001
+M-1002,Sarah,Johnson,1990-03-22,F,2020 Golden Gate Ave,apt 4B,San Francisco,CA,94102,415-555-1002,sarah.j@email.com,PLAN-002,2025-06-01,NULL,PROV-002
+M-1003,Michael,Brown,1978-11-10,M,3030 Lone Star Blvd,,Dallas,TX,75201,214-555-1003,michael.brown@email.com,PLAN-001,2024-01-01,2025-06-30,PROV-003
+M-1004,Emily,Davis,1992-07-18,F,4040 Alamo Street,apt 12,Houston,TX,77002,713-555-1004,emily.davis@email.com,PLAN-003,2025-03-01,NULL,PROV-004
+M-1005,James,Miller,1987-09-05,M,5050 5th Avenue,,New York,NY,10001,212-555-1005,james.miller@email.com,PLAN-005,2024-06-01,NULL,PROV-005
+M-1006,Jessica,Wilson,1995-12-01,F,6060 Pacific Blvd,apt 8,Los Angeles,CA,90015,310-555-1006,jessica.w@email.com,PLAN-004,2025-01-01,NULL,PROV-006
+M-1007,Robert,Taylor,1982-04-25,M,7070 Mission Street,,San Diego,CA,92101,619-555-1007,robert.taylor@email.com,PLAN-002,2025-02-01,NULL,PROV-007
+M-1008,Amanda,Martinez,1989-08-30,F,8080 Biscayne Blvd,,Miami,FL,33101,305-555-1008,amanda.m@email.com,PLAN-004,2024-11-01,NULL,PROV-008
+M-1009,Daniel,Anderson,1975-10-10,M,9090 Congress Ave,,Austin,TX,78701,512-555-1009,daniel.anderson@email.com,PLAN-003,2024-08-01,2025-07-31,PROV-009
+M-1010,Laura,Thomas,1993-02-14,F,1010 Lake Shore Dr,apt 15,Chicago,IL,60601,312-555-1010,laura.thomas@email.com,PLAN-001,2025-05-01,NULL,PROV-010
+M-1011,Kevin,White,1986-07-07,M,1111 Ocean Blvd,,Los Angeles,CA,90001,310-555-1011,kevin.white@email.com,PLAN-004,2025-06-01,NULL,PROV-006
+M-1012,Rachel,Harris,1991-11-20,F,1212 Golden Street,,New York,NY,10001,212-555-1012,rachel.h@email.com,PLAN-005,2025-01-01,NULL,PROV-005
+M-1013,Thomas,Clark,1980-05-30,M,1313 Alamo Drive,,San Antonio,TX,78201,210-555-1013,thomas.clark@email.com,PLAN-003,2024-10-01,NULL,PROV-009
+M-1014,Patricia,Lewis,1988-09-12,F,1414 Mission Blvd,,San Francisco,CA,94102,415-555-1014,patricia.lewis@email.com,PLAN-002,2025-04-01,NULL,PROV-007
+M-1015,Mark,Young,1972-12-05,M,1515 2nd Street,,Chicago,IL,60601,312-555-1015,mark.young@email.com,PLAN-004,2024-12-01,NULL,PROV-010
