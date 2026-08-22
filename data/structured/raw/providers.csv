@@ -1,0 +1,11 @@
+provider_id,provider_name,npi_number,specialty,tax_id,address_line1,address_line2,city,state,zip_code,phone_number,contract_status,network_tier
+PROV-001,City General Hospital,1234567890,Hospital,12-3456789,100 Main Street,,Los Angeles,CA,90001,310-555-0100,Active,In-Network
+PROV-002,Dr. Sarah Chen MD,2345678901,Internal Medicine,23-4567890,200 Oak Avenue,Suite 300,San Francisco,CA,94102,415-555-0200,Active,In-Network
+PROV-003,Dr. Michael Rodriguez MD,3456789012,Cardiology,34-5678901,300 Pine Street,,Dallas,TX,75201,214-555-0300,Active,In-Network
+PROV-004,Dr. Emily Thompson MD,4567890123,Orthopedics,45-6789012,400 Maple Drive,,Houston,TX,77002,713-555-0400,Active,Out-of-Network
+PROV-005,Dr. James Wilson MD,5678901234,Dermatology,56-7890123,500 Birch Lane,Suite 200,New York,NY,10001,212-555-0500,Active,In-Network
+PROV-006,Dr. Lisa Park DO,6789012345,Family Practice,67-8901234,600 Cedar Street,,Los Angeles,CA,90015,310-555-0600,Active,Preferred
+PROV-007,Dr. Robert Anderson MD,7890123456,Neurology,78-9012345,700 Elm Avenue,Suite 100,San Diego,CA,92101,619-555-0700,Active,In-Network
+PROV-008,Dr. Maria Garcia MD,8901234567,OB-GYN,89-0123456,800 Palm Street,,Miami,FL,33101,305-555-0800,Terminated,Out-of-Network
+PROV-009,Dr. David Kim DO,9012345678,Pediatrics,90-1234567,900 Rose Lane,,Austin,TX,78701,512-555-0900,Active,In-Network
+PROV-010,Dr. Jennifer Patel MD,0123456789,Oncology,01-2345678,1000 Olive Drive,Suite 500,Chicago,IL,60601,312-555-1000,Active,Preferred

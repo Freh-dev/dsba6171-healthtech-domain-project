@@ -1,0 +1,9 @@
+doc_id,title,doc_type,source,owner,effective_date,version,jurisdiction,authority_status,confidentiality,access_group
+HLT-POL-001,Gold PPO Plan Benefits Booklet (2025),Benefits Summary,Synthetic Internal (Modeled after CMS SBC),Product Management,2025-01-01,2025,National,Current,Internal,Claims Adjudicators
+HLT-POL-002,Silver HMO Plan Benefits Booklet (2024),Benefits Summary,Synthetic Internal (Modeled after CMS SBC),Product Management,2024-01-01,2024,CA; NY; TX,Superseded,Internal,Claims Adjudicators
+HLT-REG-101,Medicare Secondary Payer (MSP) Guidelines,Regulatory Guideline,Synthetic Internal (Modeled after CMS Medicare Guidelines),Compliance,2025-01-01,2025,US,Current,Public,All
+HLT-PROC-005,Medical Necessity Review Procedure,Clinical Procedure,Synthetic Internal (Modeled after Medicare LCD/Aetna CPB),Clinical Operations,2025-06-01,v2.0,National,Approved,Internal,Clinical Reviewers
+HLT-PROD-01,Prior Authorization Requirements Matrix,Guideline,Synthetic Internal (Modeled after UHC Prior Auth List),Product Management,2026-07-01,Q3-2026,National,Draft,Internal,Claims Adjudicators
+HLT-FAQ-003,Claims Appeals Process FAQ,FAQ,Synthetic Internal,Member Services,2025-11-15,v1.0,National,Current,Internal,All
+HLT-CLIN-009,Clinical Criteria for Common Procedures,Clinical Guideline,Synthetic Internal (Modeled after Aetna CPB),Clinical Operations,2025-09-01,v3.1,National,Current,Internal,Clinical Reviewers
+HLT-STATE-CA,California State Mandated Benefits Addendum,Memo,Synthetic Internal (Modeled after CA DMHC Bulletins),Compliance,2026-01-01,2026,CA,Current,Public,All
