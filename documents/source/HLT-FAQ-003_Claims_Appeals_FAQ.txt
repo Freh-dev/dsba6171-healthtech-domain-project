@@ -1,0 +1,74 @@
+CLAIMS APPEALS PROCESS FAQ
+===========================
+
+Document ID: HLT-FAQ-003
+Effective Date: November 15, 2025
+Version: v1.0
+Authority Status: Current
+
+Q1: How do I file an appeal?
+
+Submit a written request within 60 days of the denial notice. Include:
+
+- Claim ID number
+- Member ID number
+- Date of service
+- Reason for appeal
+- Supporting documentation (clinical notes, etc.)
+
+Send to:
+Claims Appeals Department
+P.O. Box 5555
+City, State 12345
+
+Q2: What is the timeframe for appeal decisions?
+
+- Standard appeals: 30 days
+- Urgent appeals (life-threatening): 72 hours
+- Expedited appeals: 7 days
+
+Q3: What documentation is required?
+
+- Clinical notes
+- Prior authorization documents
+- Medical records
+- Physician statements
+- Lab results or imaging reports
+
+Q4: What happens if the appeal is denied?
+
+Members may request an external review by an independent review organization (IRO). The IRO decision is binding on the payer but not on the member.
+
+Q5: Can I appeal a partial denial?
+
+Yes. Partial denials can be appealed for the denied portion only. The approved portion will be paid.
+
+Q6: Can my provider file an appeal on my behalf?
+
+Yes. Providers may file appeals with member authorization. Providers must submit the same documentation.
+
+Q7: What are common denial reasons?
+
+- Not medically necessary
+- Experimental/investigational
+- Not covered under plan
+- Prior authorization not obtained
+- Out-of-network services
+- Missing documentation
+- Timely filing deadline missed
+
+Q8: How many levels of appeal are available?
+
+Level 1: Internal Appeal (payer review)
+Level 2: Internal Appeal (second-level review)
+Level 3: External Review (independent review organization)
+
+Q9: What if I disagree with the external review decision?
+
+External review decisions are binding on the payer. Members may pursue legal action if still dissatisfied.
+
+Q10: Who can I contact for help?
+
+Member Services: 1-800-555-APPEAL (2773)
+Monday - Friday: 8am - 8pm EST
+Saturday: 9am - 5pm EST
