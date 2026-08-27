@@ -1,0 +1,6 @@
+duckdb
+pandas
+jsonschema
+chromadb
+sentence-transformers
+jupyter

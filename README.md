@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # HealthTech Domain Project — Medical Claims & Payer Auditing Microcosm
 
 This repository contains the **HealthTech Domain Data & Knowledge Microcosm** developed for **Assignment 1 — Domain Data & Knowledge Microcosm Blueprint** in **DSBA 6171 — Data Engineering for AI**.
