@@ -11,3 +11,191 @@ CPT-45378,Colonoscopy,Surgery,,1100.00,HLT-PROD-01,TRUE
 CPT-20550,Injection of tendon sheath,Surgery,,200.00,HLT-POL-001,TRUE
 CPT-99203,Office Visit New Patient Level 3,Eval & Management,,210.00,HLT-POL-001,TRUE
 CPT-97110,Therapeutic Exercise,Physical Therapy,,85.00,HLT-POL-001,TRUE
+CPT-97112,Neuromuscular Reeducation,Physical Therapy,,60.0,HLT-POL-001,TRUE
+CPT-73030,Shoulder X-Ray,Radiology,,90.0,HLT-POL-001,TRUE
+CPT-99283,Emergency Dept Visit Level 3,Eval & Management,,200.0,HLT-POL-001,TRUE
+CPT-99231,Subsequent Inpatient Visit,Eval & Management,,70.0,HLT-POL-001,TRUE
+CPT-93325,Myocardial Perfusion Echo,Cardiovascular,,100.0,HLT-POL-001,TRUE
+CPT-93010,Electrocardiogram Interpretation Only,Cardiovascular,,25.0,HLT-PROD-01,TRUE
+CPT-99205,Office Visit New Patient Level 5,Eval & Management,,240.0,HLT-POL-001,TRUE
+CPT-96413,Chemotherapy Infusion 1 hr,Surgery,,350.0,HLT-POL-001,TRUE
+CPT-99220,Observation Care Initial,Eval & Management,,200.0,HLT-POL-001,TRUE
+CPT-99239,Hospital Discharge Day Management,Eval & Management,,110.0,HLT-POL-001,TRUE
+CPT-99212,Office Visit Established Patient Level 2,Eval & Management,,80.0,HLT-POL-001,TRUE
+CPT-96136,Psychological Testing First 30 min,Behavioral Health,,120.0,HLT-POL-001,TRUE
+CPT-98940,Chiropractic Manipulation 1-2 Regions,Physical Therapy,,50.0,HLT-POL-001,TRUE
+CPT-58558,Hysteroscopy,Surgery,,1200.0,HLT-POL-001,FALSE
+CPT-90847,Family Psychotherapy With Patient,Behavioral Health,,140.0,HLT-POL-001,TRUE
+CPT-95819,EEG Awake and Sleep,Radiology,,250.0,HLT-POL-001,TRUE
+CPT-11400,Excision Skin Lesion,Surgery,,150.0,HLT-POL-001,TRUE
+CPT-72148,MRI Lumbar Spine Without Contrast,Radiology,,800.0,HLT-POL-001,TRUE
+CPT-99218,Observation Care Initial,Eval & Management,,80.0,HLT-POL-001,TRUE
+CPT-99395,Periodic Preventive Age 18-39,Preventive,,140.0,HLT-POL-001,TRUE
+CPT-70460,CT Head With Contrast,Radiology,,475.0,HLT-POL-001,TRUE
+CPT-97605,Negative Pressure Wound Therapy,Physical Therapy,,90.0,HLT-POL-001,TRUE
+CPT-27870,Ankle Arthrodesis,Surgery,,3000.0,HLT-PROD-01,TRUE
+CPT-17000,Destruction Skin Lesions,Surgery,,80.0,HLT-POL-001,TRUE
+CPT-31050,Sinus Surgery,Surgery,,900.0,HLT-POL-001,TRUE
+CPT-97140,Manual Therapy,Physical Therapy,,65.0,HLT-POL-001,TRUE
+CPT-58150,Total Abdominal Hysterectomy,Surgery,,2400.0,HLT-POL-001,TRUE
+CPT-74183,MRI Abdomen With Contrast,Radiology,,1000.0,HLT-POL-001,FALSE
+CPT-47600,Cholecystectomy,Surgery,,2000.0,HLT-POL-001,TRUE
+CPT-99238,Hospital Discharge Day Management,Eval & Management,,90.0,HLT-POL-001,TRUE
+CPT-99204,Office Visit New Patient Level 4,Eval & Management,,190.0,HLT-POL-001,TRUE
+CPT-93350,Echocardiography Stress Test,Cardiovascular,,900.0,HLT-PROD-01,TRUE
+CPT-93018,EKG Stress Test Interpretation,Cardiovascular,,80.0,HLT-POL-001,FALSE
+CPT-99217,Observation Care Discharge Day,Eval & Management,,70.0,HLT-POL-001,TRUE
+CPT-76740,Ultrasound Renal,Radiology,,180.0,HLT-POL-001,TRUE
+CPT-93307,Echocardiogram Transthoracic,Cardiovascular,,750.0,HLT-PROD-01,TRUE
+CPT-97032,Electrical Stimulation Therapy,Physical Therapy,,30.0,HLT-POL-001,TRUE
+CPT-55700,Prostate Biopsy,Surgery,,450.0,HLT-PROD-01,TRUE
+CPT-99284,Emergency Dept Visit Level 4,Eval & Management,,280.0,HLT-POL-001,TRUE
+CPT-63047,Lumbar Laminectomy,Surgery,,3400.0,HLT-CLIN-009,TRUE
+CPT-76856,Ultrasound Pelvic,Radiology,,200.0,HLT-POL-001,TRUE
+CPT-87110,Chlamydia Culture,Laboratory,,50.0,HLT-POL-001,TRUE
+CPT-82247,Bilirubin Total,Laboratory,,20.0,HLT-POL-001,TRUE
+CPT-85027,CBC Automated,Laboratory,,30.0,HLT-POL-001,TRUE
+CPT-74150,CT Abdomen Without Contrast,Radiology,,500.0,HLT-POL-001,TRUE
+CPT-77067,Screening Mammography Bilateral,Radiology,,150.0,HLT-POL-001,TRUE
+CPT-31623,Bronchoscopy With Brushings,Surgery,,700.0,HLT-POL-001,TRUE
+CPT-62287,Decompression Spinal Cord,Surgery,,2800.0,HLT-CLIN-009,TRUE
+CPT-96202,Behavioral Intervention 16+ Older,Behavioral Health,,45.0,HLT-POL-001,TRUE
+CPT-25605,Colles Fracture Treatment,Surgery,,700.0,HLT-POL-001,TRUE
+CPT-99219,Observation Care Initial,Eval & Management,,140.0,HLT-POL-001,TRUE
+CPT-73610,Ankle X-Ray,Radiology,,85.0,HLT-POL-001,TRUE
+CPT-52332,Cystoscopy Urethral Stent,Surgery,,800.0,HLT-PROD-01,TRUE
+CPT-11730,Removal of Nail Plate,Surgery,,120.0,HLT-POL-001,TRUE
+CPT-99221,Initial Inpatient Visit,Eval & Management,,110.0,HLT-POL-001,FALSE
+CPT-99396,Periodic Preventive Age 40-64,Preventive,,150.0,HLT-POL-001,TRUE
+CPT-99495,Transitional Care Management,Eval & Management,,120.0,HLT-POL-001,TRUE
+CPT-92014,Eye Exam Established Patient,Radiology,,160.0,HLT-POL-001,TRUE
+CPT-99285,Emergency Dept Visit Level 5,Eval & Management,,350.0,HLT-POL-001,TRUE
+CPT-20553,Trigger Point Injection 6+ Muscles,Surgery,,120.0,HLT-POL-001,TRUE
+CPT-10060,Incision & Drainage Abscess,Surgery,,180.0,HLT-POL-001,TRUE
+CPT-19120,Excision Breast Lesion,Surgery,,900.0,HLT-POL-001,FALSE
+CPT-76817,Transvaginal Ultrasound,Radiology,,250.0,HLT-POL-001,TRUE
+CPT-66821,Laser Surgery Posterior Capsule,Surgery,,400.0,HLT-PROD-01,TRUE
+CPT-58570,Laparoscopic Total Hysterectomy,Surgery,,2400.0,HLT-PROD-01,TRUE
+CPT-91034,Esophageal pH Test,Radiology,,350.0,HLT-POL-001,TRUE
+CPT-90658,Influenza Vaccine Trivalent,Preventive,,30.0,HLT-POL-001,TRUE
+CPT-76604,Ultrasound Chest,Radiology,,180.0,HLT-POL-001,TRUE
+CPT-93451,Right Heart Catheterization,Cardiovascular,,900.0,HLT-POL-001,TRUE
+CPT-23350,Injection Shoulder Joint,Surgery,,120.0,HLT-POL-001,TRUE
+CPT-90846,Family Psychotherapy Without Patient,Behavioral Health,,120.0,HLT-POL-001,TRUE
+CPT-97010,Hot or Cold Packs Therapy,Physical Therapy,,15.0,HLT-POL-001,TRUE
+CPT-97760,Orthotic Management,Physical Therapy,,80.0,HLT-POL-001,TRUE
+CPT-94010,Spirometry,Cardiovascular,,60.0,HLT-POL-001,TRUE
+CPT-85025,CBC With Differential,Laboratory,,35.0,HLT-POL-001,TRUE
+CPT-27370,Injection Knee Joint,Surgery,,150.0,HLT-POL-001,TRUE
+CPT-29806,Arthroscopy Shoulder,Surgery,,1500.0,HLT-PROD-01,TRUE
+CPT-71048,Chest X-Ray 3+ Views,Radiology,,100.0,HLT-POL-001,TRUE
+CPT-93970,Extremity Venous Duplex,Cardiovascular,,250.0,HLT-POL-001,TRUE
+CPT-52281,Cystoscopy With Dilation,Surgery,,450.0,HLT-PROD-01,TRUE
+CPT-94640,Nebulizer Treatment,Cardiovascular,,45.0,HLT-POL-001,TRUE
+CPT-97035,Ultrasound Therapy,Physical Therapy,,25.0,HLT-POL-001,TRUE
+CPT-99224,Observation Care Subsequent,Eval & Management,,60.0,HLT-POL-001,TRUE
+CPT-99201,Office Visit New Patient Level 1,Eval & Management,,60.0,HLT-POL-001,TRUE
+CPT-92557,Audiology Evaluation,Radiology,,90.0,HLT-POL-001,TRUE
+CPT-86140,C-Reactive Protein,Laboratory,,35.0,HLT-POL-001,TRUE
+CPT-92950,Cardiopulmonary Resuscitation,Cardiovascular,,250.0,HLT-POL-001,TRUE
+CPT-97116,Gait Training Therapy,Physical Therapy,,70.0,HLT-POL-001,TRUE
+CPT-70552,MRI Brain With Contrast,Radiology,,950.0,HLT-POL-001,TRUE
+CPT-29822,Arthroscopy Shoulder Debridement,Surgery,,1400.0,HLT-POL-001,TRUE
+CPT-52000,Cystoscopy Diagnostic,Surgery,,350.0,HLT-POL-001,TRUE
+CPT-99385,Initial Preventive Age 18-39,Preventive,,160.0,HLT-POL-001,TRUE
+CPT-45331,Sigmoidoscopy With Biopsy,Surgery,,600.0,HLT-POL-001,TRUE
+CPT-94760,Pulse Oximetry,Cardiovascular,,25.0,HLT-POL-001,TRUE
+CPT-47562,Laparoscopic Cholecystectomy,Surgery,,2200.0,HLT-POL-001,TRUE
+CPT-58100,Endometrial Biopsy,Surgery,,250.0,HLT-PROD-01,TRUE
+CPT-27130,Total Hip Replacement,Surgery,,4800.0,HLT-PROD-01,TRUE
+CPT-99341,Home Visit New Patient,Eval & Management,,100.0,HLT-POL-001,TRUE
+CPT-58301,Removal IUD,Surgery,,110.0,HLT-POL-001,TRUE
+CPT-59510,Cesarean Delivery,Surgery,,2500.0,HLT-PROD-01,TRUE
+CPT-63030,Lumbar Discectomy,Surgery,,3200.0,HLT-PROD-01,TRUE
+CPT-93880,Carotid Duplex Ultrasound,Cardiovascular,,300.0,HLT-POL-001,FALSE
+CPT-97533,Sensory Integrative Therapy,Physical Therapy,,50.0,HLT-POL-001,TRUE
+CPT-70450,CT Head Without Contrast,Radiology,,450.0,HLT-POL-001,TRUE
+CPT-72195,MRI Pelvis Without Contrast,Radiology,,900.0,HLT-POL-001,TRUE
+CPT-45330,Sigmoidoscopy Diagnostic,Surgery,,500.0,HLT-PROD-01,TRUE
+CPT-99235,Observation Same Day Discharge,Eval & Management,,280.0,HLT-POL-001,TRUE
+CPT-99397,Periodic Preventive Age 65+,Preventive,,160.0,HLT-POL-001,TRUE
+CPT-97535,Self Care Management Training,Physical Therapy,,70.0,HLT-POL-001,TRUE
+CPT-99222,Initial Inpatient Visit,Eval & Management,,160.0,HLT-POL-001,TRUE
+CPT-29881,Arthroscopy Knee Medial Meniscectomy,Surgery,,1500.0,HLT-POL-001,TRUE
+CPT-58720,Myomectomy,Surgery,,2400.0,HLT-PROD-01,TRUE
+CPT-96132,Neuropsychological Testing,Preventive,,350.0,HLT-POL-001,TRUE
+CPT-95250,Continuous Glucose Monitor Insertion,Cardiovascular,,250.0,HLT-PROD-01,TRUE
+CPT-49505,Inguinal Hernia Repair,Surgery,,1800.0,HLT-POL-001,TRUE
+CPT-87631,Streptococcus Group A PCR,Laboratory,,60.0,HLT-POL-001,TRUE
+CPT-72040,Cervical Spine X-Ray,Radiology,,110.0,HLT-POL-001,TRUE
+CPT-71046,Chest X-Ray Two Views,Radiology,,80.0,HLT-POL-001,TRUE
+CPT-99281,Emergency Dept Visit Level 1,Eval & Management,,90.0,HLT-POL-001,TRUE
+CPT-99211,Office Visit Established Patient Level 1,Eval & Management,,40.0,HLT-POL-001,TRUE
+CPT-29880,Arthroscopy Knee Both Compartments,Surgery,,1600.0,HLT-POL-001,TRUE
+CPT-99232,Subsequent Inpatient Visit,Eval & Management,,100.0,HLT-POL-001,TRUE
+CPT-93503,Swan-Ganz Catheter Placement,Cardiovascular,,300.0,HLT-POL-001,TRUE
+CPT-99407,Smoking Cessation Counseling >10 min,Preventive,,50.0,HLT-POL-001,TRUE
+CPT-99401,Preventive Counseling 15 min,Preventive,,50.0,HLT-POL-001,TRUE
+CPT-99223,Initial Inpatient Visit,Eval & Management,,210.0,HLT-POL-001,TRUE
+CPT-99233,Subsequent Inpatient Visit,Eval & Management,,130.0,HLT-POL-001,TRUE
+CPT-58300,Insertion IUD,Surgery,,130.0,HLT-POL-001,TRUE
+CPT-27447,Total Knee Replacement,Surgery,,5200.0,HLT-PROD-01,TRUE
+CPT-93005,Electrocardiogram Tracing Only,Cardiovascular,,35.0,HLT-POL-001,TRUE
+CPT-99298,Critical Care Infant/Child,Eval & Management,,300.0,HLT-POL-001,TRUE
+CPT-97129,Therapeutic Interventions Cognitive,Physical Therapy,,70.0,HLT-POL-001,FALSE
+CPT-20552,Trigger Point Injection 3+ Muscles,Surgery,,90.0,HLT-POL-001,TRUE
+CPT-98942,Chiropractic Manipulation 5 Regions,Physical Therapy,,85.0,HLT-POL-001,TRUE
+CPT-99282,Emergency Dept Visit Level 2,Eval & Management,,120.0,HLT-POL-001,TRUE
+CPT-64721,Carpal Tunnel Release,Surgery,,700.0,HLT-POL-001,TRUE
+CPT-96374,Therapeutic Injection Intravenous,Surgery,,80.0,HLT-POL-001,TRUE
+CPT-97530,Therapeutic Activities,Physical Therapy,,70.0,HLT-POL-001,TRUE
+CPT-73590,Lower Leg X-Ray,Radiology,,90.0,HLT-POL-001,TRUE
+CPT-70551,MRI Brain Without Contrast,Radiology,,850.0,HLT-POL-001,TRUE
+CPT-93320,Myocardial Echocardiography,Cardiovascular,,120.0,HLT-POL-001,TRUE
+CPT-59812,Dilation & Curettage Miscarriage,Surgery,,1000.0,HLT-POL-001,TRUE
+CPT-67113,Retinal Detachment Repair,Surgery,,2200.0,HLT-POL-001,TRUE
+CPT-81002,Urinalysis Without Scope,Laboratory,,15.0,HLT-POL-001,TRUE
+CPT-99483,Cognitive Impairment Assessment,Preventive,,250.0,HLT-POL-001,TRUE
+CPT-92004,Comprehensive Eye Exam,Radiology,,200.0,HLT-POL-001,TRUE
+CPT-52601,Transurethral Resection Prostate,Surgery,,2500.0,HLT-POL-001,TRUE
+CPT-29827,Arthroscopy Rotator Cuff Repair,Surgery,,2000.0,HLT-PROD-01,TRUE
+CPT-63045,Thoracic Laminectomy,Surgery,,3500.0,HLT-POL-001,TRUE
+CPT-90832,Psychotherapy 30 min,Behavioral Health,,90.0,HLT-POL-001,TRUE
+CPT-90834,Psychotherapy 45 min,Behavioral Health,,130.0,HLT-POL-001,TRUE
+CPT-80061,Lipid Panel,Laboratory,,50.0,HLT-POL-001,TRUE
+CPT-64483,Epidural Steroid Injection Lumbar,Surgery,,400.0,HLT-POL-001,TRUE
+CPT-93458,Coronary Angiography,Cardiovascular,,1500.0,HLT-PROD-01,TRUE
+CPT-64640,Denervation Peripheral Nerve,Surgery,,300.0,HLT-PROD-01,TRUE
+CPT-80053,Comprehensive Metabolic Panel,Laboratory,,55.0,HLT-POL-001,TRUE
+CPT-80048,Basic Metabolic Panel,Laboratory,,45.0,HLT-POL-001,TRUE
+CPT-30110,Removal Nasal Polyp,Surgery,,150.0,HLT-POL-001,TRUE
+CPT-98960,Education Self-Management 30 min,Preventive,,45.0,HLT-POL-001,TRUE
+CPT-96372,Therapeutic Injection Subcutaneous,Surgery,,50.0,HLT-POL-001,TRUE
+CPT-10140,Incision Drainage Hematoma,Surgery,,220.0,HLT-POL-001,FALSE
+CPT-90837,Psychotherapy 60 min,Behavioral Health,,180.0,HLT-POL-001,TRUE
+CPT-20610,Arthrocentesis Large Joint,Surgery,,100.0,HLT-PROD-01,TRUE
+CPT-81001,Urinalysis Automated,Laboratory,,25.0,HLT-POL-001,TRUE
+CPT-77075,Bone Survey X-Ray,Radiology,,120.0,HLT-POL-001,FALSE
+CPT-97762,Orthotic Checkout,Physical Therapy,,60.0,HLT-POL-001,TRUE
+CPT-76700,Ultrasound Abdomen Complete,Radiology,,250.0,HLT-POL-001,FALSE
+CPT-73221,MRI Upper Extremity Joint Without Contrast,Radiology,,850.0,HLT-POL-001,TRUE
+CPT-83036,Hemoglobin A1c,Laboratory,,40.0,HLT-POL-001,TRUE
+CPT-95907,Nerve Conduction Study 1-2 Nerves,Radiology,,220.0,HLT-POL-001,TRUE
+CPT-67210,Photocoagulation Retina,Surgery,,900.0,HLT-POL-001,TRUE
+CPT-93015,Cardiovascular Stress Test,Cardiovascular,,200.0,HLT-POL-001,FALSE
+CPT-99406,Smoking Cessation Counseling 3-10 min,Preventive,,30.0,HLT-POL-001,TRUE
+CPT-61790,Craniotomy Intracranial Lesion,Surgery,,4200.0,HLT-CLIN-009,TRUE
+CPT-78452,Myocardial Perfusion SPECT,Cardiovascular,,750.0,HLT-PROD-01,TRUE
+CPT-43235,Esophagogastroduodenoscopy Diagnostic,Surgery,,750.0,HLT-POL-001,TRUE
+CPT-90732,Pneumococcal Polysaccharide Vaccine,Preventive,,90.0,HLT-POL-001,TRUE
+CPT-72050,Cervical Spine X-Ray 3+ Views,Radiology,,150.0,HLT-POL-001,TRUE
+CPT-95909,Nerve Conduction Study 3-4 Nerves,Radiology,,170.0,HLT-POL-001,TRUE
+CPT-62323,Epidural Steroid Injection,Surgery,,500.0,HLT-PROD-01,TRUE
+CPT-90853,Group Psychotherapy 90 min,Behavioral Health,,40.0,HLT-POL-001,TRUE
+CPT-85652,Sedimentation Rate Manual,Laboratory,,15.0,HLT-POL-001,TRUE
+CPT-99386,Initial Preventive Age 40-64,Preventive,,180.0,HLT-POL-001,TRUE
+CPT-97542,Wheelchair Management Training,Physical Therapy,,60.0,HLT-POL-001,TRUE
+CPT-72193,CT Pelvis Without Contrast,Radiology,,550.0,HLT-POL-001,TRUE
+CPT-94014,Pulmonary Function Testing,Cardiovascular,,120.0,HLT-PROD-01,TRUE
+CPT-97755,Assistive Technology Assessment,Physical Therapy,,80.0,HLT-POL-001,TRUE
+CPT-99202,Office Visit New Patient Level 2,Eval & Management,,90.0,HLT-POL-001,TRUE

@@ -9,3 +9,193 @@ PROV-007,Dr. Robert Anderson MD,7890123456,Neurology,78-9012345,700 Elm Avenue,S
 PROV-008,Dr. Maria Garcia MD,8901234567,OB-GYN,89-0123456,800 Palm Street,,Miami,FL,33101,305-555-0800,Terminated,Out-of-Network
 PROV-009,Dr. David Kim DO,9012345678,Pediatrics,90-1234567,900 Rose Lane,,Austin,TX,78701,512-555-0900,Active,In-Network
 PROV-010,Dr. Jennifer Patel MD,0123456789,Oncology,01-2345678,1000 Olive Drive,Suite 500,Chicago,IL,60601,312-555-1000,Active,Preferred
+PROV-011,Dr. Brian Campbell DO,2576954730,Ophthalmology,67-4925917,8849 Biscayne Blvd,,Philadelphia,PA,19101,215-555-8684,Active,Out-of-Network
+PROV-012,Dr. Jacob Allen MD,4274008639,Ophthalmology,27-5194357,954 Birch Lane,,Tampa,FL,33601,813-555-7081,Active,Preferred
+PROV-013,Downtown PhysicalTherapy,3190060226,Physical Therapy,75-3472100,7267 Lone Star Blvd,Floor 8,Detroit,MI,48201,313-555-1436,Active,In-Network
+PROV-014,Dr. Andrew Allen MD,1502559419,Endocrinology,22-6625238,2492 5th Avenue,,Boston,MA,02101,617-555-8740,Active,In-Network
+PROV-015,Dr. John Wilson MD,1374796224,General Surgery,87-9854536,7034 Alamo Street,Suite 343,Atlanta,GA,30301,404-555-1782,Active,In-Network
+PROV-016,Dr. Linda Mitchell DO,1778556450,Ophthalmology,28-5886733,7132 Sunset Blvd,Floor 10,Tampa,FL,33601,813-555-4068,Active,In-Network
+PROV-017,Advanced PhysicalTherapy,1664852025,Physical Therapy,74-1341153,6497 Spruce Street,,Phoenix,AZ,85001,602-555-7338,Active,Out-of-Network
+PROV-018,Dr. Daniel Walker MD,2886989426,Internal Medicine,84-6578736,2285 Golden Gate Ave,,Seattle,WA,98101,206-555-6546,Active,In-Network
+PROV-019,Dr. Patricia Roberts MD,2971339002,Ophthalmology,68-1620485,4907 Mission Street,,Phoenix,AZ,85001,602-555-4268,Active,Out-of-Network
+PROV-020,Riverside Radiology,4975535611,Radiology,92-4206183,4787 Golden Street,Floor 11,San Diego,CA,92101,619-555-5476,Active,In-Network
+PROV-021,Dr. Helen Wright MD,4464037804,Urology,73-7163058,8607 Congress Ave,Suite 844,Austin,TX,78701,512-555-8055,Pending,In-Network
+PROV-022,Downtown Family Medicine,3210163669,Hospital,49-8481225,9973 Willow Way,,Denver,CO,80201,303-555-8272,Active,Out-of-Network
+PROV-023,Dr. Edward Perez MD,4394801573,Cardiology,17-2258981,6755 Golden Street,,Seattle,WA,98101,206-555-3621,Active,Out-of-Network
+PROV-024,Dr. Daniel Garcia DO,3488856231,Ophthalmology,87-3574265,7471 Golden Street,,San Francisco,CA,94102,415-555-2259,Active,Out-of-Network
+PROV-025,Advanced PhysicalTherapy,4437568796,Physical Therapy,24-1434753,3148 Pine Street,,Denver,CO,80201,303-555-2929,Active,In-Network
+PROV-026,Dr. Sandra Clark MD,4314939857,Ophthalmology,67-3896693,7392 Lone Star Blvd,Floor 11,Chicago,IL,60601,312-555-2063,Active,Preferred
+PROV-027,City Radiology,2952225000,Radiology,35-3329967,3978 Sycamore St,,Detroit,MI,48201,313-555-6912,Active,In-Network
+PROV-028,Dr. Nancy Anderson MD,1170596494,Ophthalmology,71-9819709,6830 Magnolia Ave,,Detroit,MI,48201,313-555-2208,Active,Preferred
+PROV-029,Dr. Melissa Adams MD,3237798236,Orthopedics,91-4052834,2214 Maple Drive,,Buffalo,NY,14201,716-555-1907,Active,Out-of-Network
+PROV-030,City Radiology,2446454337,Radiology,76-5765539,1392 Congress Ave,,Houston,TX,77002,713-555-5496,Terminated,In-Network
+PROV-031,Community Health Clinic,2735449477,Hospital,94-6664316,9334 Golden Gate Ave,Suite 129,Buffalo,NY,14201,716-555-5336,Terminated,In-Network
+PROV-032,Dr. Michael Scott MD,3789242701,Urology,97-7813102,4973 Oak Avenue,,Phoenix,AZ,85001,602-555-1981,Pending,In-Network
+PROV-033,Dr. Matthew Lee MD,2435632899,Urology,54-7689354,2242 Magnolia Ave,,Buffalo,NY,14201,716-555-2739,Active,In-Network
+PROV-034,Dr. Laura Garcia DO,2203950725,Ophthalmology,88-8015136,4167 Spruce Street,Floor 10,Seattle,WA,98101,206-555-4110,Active,Preferred
+PROV-035,Dr. Rachel Scott MD,3634047267,General Surgery,74-8671057,4044 Mission Street,,Philadelphia,PA,19101,215-555-1797,Active,Preferred
+PROV-036,Dr. Kimberly Campbell MD,4406819991,General Surgery,65-3247055,4433 Aspen Court,,San Diego,CA,92101,619-555-7606,Active,Preferred
+PROV-037,Dr. Nancy Harris DO,3694018597,Endocrinology,67-5692934,2046 5th Avenue,Floor 6,Seattle,WA,98101,206-555-6990,Active,In-Network
+PROV-038,Dr. Emily Green MD,1148644109,OB-GYN,70-9712957,7587 5th Avenue,Floor 3,Philadelphia,PA,19101,215-555-6218,Active,Out-of-Network
+PROV-039,Riverside Radiology,3644725317,Radiology,82-6029651,7880 Juniper Lane,,Buffalo,NY,14201,716-555-6427,Active,In-Network
+PROV-040,Dr. Deborah Parker MD,1740926818,Urology,84-4817541,941 Rose Lane,,Phoenix,AZ,85001,602-555-9589,Active,Preferred
+PROV-041,Dr. Andrew Brown MD,1304853117,Family Practice,29-7928320,3440 Maple Drive,,Phoenix,AZ,85001,602-555-8726,Active,In-Network
+PROV-042,Dr. Nancy Lewis MD,4664226794,Family Practice,68-9944387,5708 Elm Avenue,,Atlanta,GA,30301,404-555-5331,Active,Preferred
+PROV-043,Dr. Ryan Gonzalez MD,3341449138,OB-GYN,46-4477544,8111 Ocean Blvd,,Denver,CO,80201,303-555-5480,Terminated,Preferred
+PROV-044,Neurology Center of Excellence,4978726109,Hospital,28-5872986,789 Lake Shore Dr,Floor 6,Chicago,IL,60601,312-555-5201,Active,Out-of-Network
+PROV-045,Dr. Karen Robinson MD,3247395716,OB-GYN,40-5067770,931 Palm Street,Suite 331,Atlanta,GA,30301,404-555-1860,Active,Out-of-Network
+PROV-046,Dr. Thomas Campbell MD,2105563528,Psychiatry,30-7826774,7893 Pine Street,Floor 5,San Antonio,TX,78201,210-555-5676,Pending,Preferred
+PROV-047,Dr. Anthony Baker MD,1287974375,Orthopedics,14-7660463,8216 Pacific Blvd,Suite 396,Phoenix,AZ,85001,602-555-5888,Active,Preferred
+PROV-048,Dr. Kimberly Baker MD,4244096091,Psychiatry,34-2889899,5517 Pacific Blvd,Suite 763,Denver,CO,80201,303-555-1230,Active,In-Network
+PROV-049,Riverside Radiology,2288436227,Radiology,61-8175669,8542 Ocean Blvd,,Atlanta,GA,30301,404-555-2562,Active,Out-of-Network
+PROV-050,Dr. Andrew Smith MD,3511859868,General Surgery,52-6065810,9643 Aspen Court,,New York,NY,10001,212-555-5285,Active,Out-of-Network
+PROV-051,Dr. Mark Lopez DO,3271494637,Pediatrics,49-2969909,4933 Golden Street,Floor 3,Phoenix,AZ,85001,602-555-3509,Active,In-Network
+PROV-052,Dr. Patricia Baker MD,2918040539,Urology,20-9816538,7419 Cedar Street,Suite 179,Cleveland,OH,44101,216-555-2011,Active,Out-of-Network
+PROV-053,University Health System,2452313624,Hospital,97-4446065,9654 Pine Street,,Detroit,MI,48201,313-555-9361,Active,In-Network
+PROV-054,Dr. Jessica Lopez DO,1700003920,Ophthalmology,12-7642917,4269 Juniper Lane,,Columbus,OH,43201,614-555-4570,Active,Preferred
+PROV-055,Dr. Barbara Miller MD,1174108740,Cardiology,46-7859648,3048 Magnolia Ave,,Denver,CO,80201,303-555-7887,Pending,In-Network
+PROV-056,Dr. Sarah Allen MD,1833076128,Ophthalmology,27-6834610,2043 Pacific Blvd,Suite 502,Seattle,WA,98101,206-555-4648,Pending,Preferred
+PROV-057,Lakeside Radiology,4671159367,Radiology,68-6807596,2641 Congress Ave,,Los Angeles,CA,90001,310-555-2848,Active,In-Network
+PROV-058,Dr. Daniel Moore MD,1579362443,Internal Medicine,16-5105957,824 Mission Blvd,,Sacramento,CA,95814,916-555-9843,Active,Out-of-Network
+PROV-059,Dr. Jacob Thompson MD,3720058859,Family Practice,51-4974590,5044 5th Avenue,Floor 4,Miami,FL,33101,305-555-5923,Active,Out-of-Network
+PROV-060,Westside Primary Care,4696840109,Hospital,92-7394713,8692 Ocean Blvd,Floor 3,Chicago,IL,60601,312-555-7167,Active,Preferred
+PROV-061,Dr. Nathan Evans MD,2965195567,Pediatrics,62-7987842,9230 Cedar Street,,Buffalo,NY,14201,716-555-4978,Active,In-Network
+PROV-062,Dr. Laura Hall MD,1675134276,Psychiatry,44-7327828,9978 Golden Gate Ave,Suite 292,Chicago,IL,60601,312-555-8854,Active,In-Network
+PROV-063,Downtown Radiology,2304036387,Radiology,71-5070038,3450 Mission Blvd,Floor 6,Tampa,FL,33601,813-555-7236,Pending,In-Network
+PROV-064,Advanced Radiology,3650632566,Radiology,70-6372622,3428 Golden Street,,Cleveland,OH,44101,216-555-1749,Active,In-Network
+PROV-065,Dr. Nancy Carter DO,4416960306,Family Practice,58-5122665,8280 Elm Avenue,Floor 6,Denver,CO,80201,303-555-9005,Active,In-Network
+PROV-066,Dr. Edward Jackson DO,2873430762,Ophthalmology,79-1985360,8684 Golden Gate Ave,Suite 176,Atlanta,GA,30301,404-555-1104,Active,In-Network
+PROV-067,Dr. Richard Smith DO,2643026584,Pediatrics,91-9106820,8093 Sunset Blvd,,Boston,MA,02101,617-555-7739,Active,In-Network
+PROV-068,Advanced PhysicalTherapy,3118406723,Physical Therapy,65-4007598,1853 Alamo Street,,Los Angeles,CA,90001,310-555-4948,Active,Out-of-Network
+PROV-069,Advanced PhysicalTherapy,3387037751,Physical Therapy,61-8700704,9356 Biscayne Blvd,Suite 331,Orlando,FL,32801,407-555-1519,Active,In-Network
+PROV-070,Dr. Patricia Davis MD,1854674236,Endocrinology,65-6557798,9370 Spruce Street,Suite 640,San Antonio,TX,78201,210-555-4463,Active,In-Network
+PROV-071,Dr. Daniel Campbell DO,3683074772,Oncology,50-1262699,3494 Rose Lane,,Atlanta,GA,30301,404-555-7525,Active,In-Network
+PROV-072,Dr. Lisa Allen MD,3512151733,Neurology,98-2315798,8304 Aspen Court,Floor 2,Austin,TX,78701,512-555-4803,Active,In-Network
+PROV-073,Dr. William Johnson MD,3941328406,Endocrinology,55-7298619,7175 Pacific Blvd,Suite 776,Austin,TX,78701,512-555-5839,Pending,In-Network
+PROV-074,Dr. Richard Allen DO,2894198823,Orthopedics,21-1087161,5150 Oak Avenue,,Philadelphia,PA,19101,215-555-5419,Active,In-Network
+PROV-075,Dr. Laura Gonzalez DO,4210909937,Orthopedics,21-6443037,6411 Sunset Blvd,,Houston,TX,77002,713-555-7353,Active,In-Network
+PROV-076,Cardiovascular Associates,2835852444,Hospital,48-5503118,8179 5th Avenue,,Philadelphia,PA,19101,215-555-8121,Active,In-Network
+PROV-077,Lakeside Radiology,1487754927,Radiology,90-9318184,9828 Olive Drive,,Chicago,IL,60601,312-555-2752,Active,In-Network
+PROV-078,Dr. Steven Perez MD,4963370520,Internal Medicine,65-3283789,5022 Ocean Blvd,Floor 4,Buffalo,NY,14201,716-555-6147,Active,In-Network
+PROV-079,Dr. Barbara Roberts MD,4718345671,Psychiatry,45-7592357,6080 Alamo Street,Suite 304,Buffalo,NY,14201,716-555-1440,Active,In-Network
+PROV-080,Dr. Jacob Parker MD,1979357576,OB-GYN,96-9376917,2380 Birch Lane,,Atlanta,GA,30301,404-555-5139,Active,Out-of-Network
+PROV-081,Dr. Daniel Wright MD,4725179752,Urology,98-8017921,9007 Golden Gate Ave,Suite 468,Phoenix,AZ,85001,602-555-2791,Active,In-Network
+PROV-082,Dr. Sandra Brown DO,4908186980,Gastroenterology,23-1176962,1715 Congress Ave,,Philadelphia,PA,19101,215-555-9499,Active,Out-of-Network
+PROV-083,Dr. Rachel Campbell MD,2470405910,Ophthalmology,47-7978909,1506 Alamo Street,Floor 3,Detroit,MI,48201,313-555-6110,Pending,In-Network
+PROV-084,Dr. Edward Hill MD,1570477095,OB-GYN,18-6037595,832 Sycamore St,Suite 123,Seattle,WA,98101,206-555-3692,Active,In-Network
+PROV-085,City PhysicalTherapy,2455397438,Physical Therapy,39-7795568,3122 Pacific Blvd,Suite 542,Atlanta,GA,30301,404-555-4232,Active,Preferred
+PROV-086,Dr. Matthew Martin DO,3907803348,Endocrinology,83-2707116,8896 Pacific Blvd,,Cleveland,OH,44101,216-555-4228,Active,Out-of-Network
+PROV-087,Dr. Linda Adams MD,3740992546,Oncology,24-6837206,5866 Spruce Street,,Columbus,OH,43201,614-555-3826,Active,In-Network
+PROV-088,Dr. William Taylor MD,2427899285,Orthopedics,28-9570219,6464 Maple Drive,,Phoenix,AZ,85001,602-555-7286,Active,In-Network
+PROV-089,Dr. Barbara Turner MD,2695832844,General Surgery,33-6277776,7489 Olive Drive,,Boston,MA,02101,617-555-6882,Active,In-Network
+PROV-090,Dr. Sarah Gonzalez DO,4539304662,Family Practice,66-9199017,2840 Lone Star Blvd,,Sacramento,CA,95814,916-555-4613,Active,In-Network
+PROV-091,Dr. Jacob Jackson MD,4707362554,Oncology,80-9569902,1954 Rose Lane,,Chicago,IL,60601,312-555-9898,Active,Out-of-Network
+PROV-092,Dr. Amanda Moore MD,2419662531,Ophthalmology,43-6848151,1525 Oak Avenue,Suite 220,Seattle,WA,98101,206-555-6744,Active,In-Network
+PROV-093,Dr. Matthew Martin MD,1712112671,Neurology,78-3824903,5402 Willow Way,,Atlanta,GA,30301,404-555-5380,Active,In-Network
+PROV-094,Dr. Jessica Davis MD,3804263267,Family Practice,41-3453557,5377 Juniper Lane,,Detroit,MI,48201,313-555-7434,Active,Preferred
+PROV-095,Dr. Sarah Wright MD,1780352629,Oncology,61-9650558,4658 Willow Way,Floor 8,Columbus,OH,43201,614-555-6362,Active,Out-of-Network
+PROV-096,Dr. Rachel Roberts MD,3168000803,Orthopedics,64-4554277,8205 Congress Ave,,Denver,CO,80201,303-555-5646,Active,In-Network
+PROV-097,Dr. Melissa Davis MD,1206917560,General Surgery,12-3084353,2688 Oak Avenue,,Seattle,WA,98101,206-555-8009,Active,Preferred
+PROV-098,Dr. Nathan Jackson MD,3200223044,Family Practice,57-3777050,948 Mission Blvd,Suite 843,Orlando,FL,32801,407-555-8032,Active,In-Network
+PROV-099,Dr. Patricia Miller DO,2737458510,Dermatology,11-1135267,5729 Juniper Lane,,Phoenix,AZ,85001,602-555-7919,Active,Out-of-Network
+PROV-100,Dr. Sarah Wilson DO,1210811807,General Surgery,27-7420993,2281 Birch Lane,Suite 246,Atlanta,GA,30301,404-555-3688,Active,Preferred
+PROV-101,Dr. Richard Hernandez MD,4333264702,OB-GYN,25-7442986,5859 Maple Drive,,Cleveland,OH,44101,216-555-3290,Active,In-Network
+PROV-102,Dr. Betty Mitchell MD,3936412291,Orthopedics,94-6060836,3466 Cedar Street,Floor 12,Tampa,FL,33601,813-555-5842,Terminated,In-Network
+PROV-103,Dr. Mark Garcia MD,4785135687,Pediatrics,11-7058222,5285 5th Avenue,,Phoenix,AZ,85001,602-555-7895,Active,In-Network
+PROV-104,Dr. Daniel Johnson MD,1114810579,General Surgery,17-7676912,8400 Lake Shore Dr,Floor 7,Seattle,WA,98101,206-555-7590,Active,In-Network
+PROV-105,Dr. Kevin Green DO,2967647911,Oncology,85-2109227,5181 Willow Way,,Houston,TX,77002,713-555-4909,Active,In-Network
+PROV-106,Dr. Mark Lopez MD,1432097676,Orthopedics,32-3003921,307 Willow Way,,San Francisco,CA,94102,415-555-1185,Active,Out-of-Network
+PROV-107,Dr. Deborah Martinez MD,2499291766,Gastroenterology,44-2980663,580 Ocean Blvd,Suite 378,Buffalo,NY,14201,716-555-5308,Active,Out-of-Network
+PROV-108,Dr. Brian Davis MD,4708689346,General Surgery,23-2934976,3842 Aspen Court,,Atlanta,GA,30301,404-555-1721,Active,In-Network
+PROV-109,Dr. Sarah Thomas MD,2137971349,Cardiology,93-8035849,3778 Ocean Blvd,,San Francisco,CA,94102,415-555-6241,Active,Preferred
+PROV-110,Dr. Melissa Davis DO,2339643129,Gastroenterology,61-2156393,7720 Spruce Street,,Chicago,IL,60601,312-555-6090,Active,Preferred
+PROV-111,Oncology & Infusion Center,1496124146,Hospital,48-5069884,7700 Golden Street,,Seattle,WA,98101,206-555-9083,Active,Out-of-Network
+PROV-112,Cardiovascular Associates,2106848195,Hospital,79-6812025,257 Ocean Blvd,,Philadelphia,PA,19101,215-555-7164,Terminated,In-Network
+PROV-113,Dr. Andrew Hernandez MD,4164311845,Dermatology,45-2560728,819 Biscayne Blvd,Floor 7,Atlanta,GA,30301,404-555-8511,Pending,In-Network
+PROV-114,Dr. Ashley Young MD,1735543236,Dermatology,26-4972370,4878 Congress Ave,Floor 12,Atlanta,GA,30301,404-555-6211,Active,In-Network
+PROV-115,Dr. Christopher Anderson DO,1266870811,Pediatrics,50-7820148,2078 Elm Avenue,,Cleveland,OH,44101,216-555-4401,Active,In-Network
+PROV-116,Dr. Mark Wilson MD,2967150570,Ophthalmology,99-1676621,3622 Juniper Lane,Suite 251,Cleveland,OH,44101,216-555-6828,Active,Preferred
+PROV-117,Advanced Radiology,2133374137,Radiology,81-5191831,1651 Oak Avenue,,Boston,MA,02101,617-555-3290,Pending,Preferred
+PROV-118,Dr. Anthony Anderson MD,2984412594,Cardiology,92-2409947,9640 Rose Lane,,Dallas,TX,75201,214-555-2228,Active,Out-of-Network
+PROV-119,Dr. Laura Anderson MD,1990514408,OB-GYN,69-1849559,2852 Rose Lane,,Los Angeles,CA,90001,310-555-7471,Active,In-Network
+PROV-120,Dr. Charles Walker MD,2300951978,Endocrinology,29-1581321,4126 Birch Lane,,Columbus,OH,43201,614-555-7750,Active,In-Network
+PROV-121,Dr. Sarah Anderson DO,4314166184,Cardiology,41-1327658,6366 Sycamore St,Floor 9,Detroit,MI,48201,313-555-6636,Active,Out-of-Network
+PROV-122,Dr. Michael Lewis MD,2131464348,Endocrinology,17-8913550,8774 Golden Street,Suite 338,Denver,CO,80201,303-555-5060,Active,Out-of-Network
+PROV-123,Dr. Helen Davis MD,2718144695,Oncology,55-3914404,2985 Biscayne Blvd,,Phoenix,AZ,85001,602-555-6878,Active,Out-of-Network
+PROV-124,Dr. Lisa Thomas MD,2998396384,Gastroenterology,73-6185050,2976 Pine Street,,Denver,CO,80201,303-555-1920,Pending,Preferred
+PROV-125,Dr. Patricia Smith DO,3759422189,Pediatrics,32-6428919,1075 Sunset Blvd,,Orlando,FL,32801,407-555-3320,Active,In-Network
+PROV-126,Advanced PhysicalTherapy,1501140044,Physical Therapy,85-2695038,5614 Lake Shore Dr,,Philadelphia,PA,19101,215-555-3580,Active,Out-of-Network
+PROV-127,Dr. Charles Evans MD,3339699130,General Surgery,58-6147639,4925 5th Avenue,,Atlanta,GA,30301,404-555-1029,Active,Preferred
+PROV-128,Dr. William Perez DO,2786815488,Cardiology,28-6556084,1374 Biscayne Blvd,,Atlanta,GA,30301,404-555-6234,Active,Preferred
+PROV-129,Dr. Joshua Martin MD,2844292151,Psychiatry,23-1021494,888 Mission Blvd,,New York,NY,10001,212-555-7875,Active,In-Network
+PROV-130,Dr. Edward Baker MD,4208908082,General Surgery,83-4784650,2764 Oak Avenue,,Buffalo,NY,14201,716-555-1547,Active,Out-of-Network
+PROV-131,Dr. Thomas Miller MD,3282649071,Psychiatry,19-2562037,5636 Olive Drive,Suite 594,Chicago,IL,60601,312-555-8066,Active,In-Network
+PROV-132,Dr. Thomas Lee DO,2303994042,Urology,79-5450404,4712 Lake Shore Dr,,Phoenix,AZ,85001,602-555-1813,Active,Out-of-Network
+PROV-133,Dr. John King DO,1416270056,Family Practice,71-4349987,1689 Sunset Blvd,,Boston,MA,02101,617-555-5781,Active,Out-of-Network
+PROV-134,Dr. Emily Hill MD,4809786356,Dermatology,59-4101792,6178 Mission Blvd,,San Antonio,TX,78201,210-555-8303,Active,Out-of-Network
+PROV-135,Dr. Anthony Robinson MD,1262275325,Ophthalmology,20-6767862,8971 Maple Drive,Suite 703,San Diego,CA,92101,619-555-7342,Active,Out-of-Network
+PROV-136,Urgent Care Plus,2611382735,Hospital,14-9423864,9458 Cedar Street,Suite 793,Detroit,MI,48201,313-555-2970,Active,In-Network
+PROV-137,Dr. Joseph Martin MD,2235491190,Neurology,97-8304686,3408 Juniper Lane,Floor 5,Philadelphia,PA,19101,215-555-2097,Active,In-Network
+PROV-138,Neurology Center of Excellence,3396568375,Hospital,11-9767135,6974 Alamo Street,,San Antonio,TX,78201,210-555-3428,Active,Preferred
+PROV-139,Dr. Thomas Clark MD,3541189818,Dermatology,83-8936405,713 Pacific Blvd,,Denver,CO,80201,303-555-3356,Active,Out-of-Network
+PROV-140,Dr. Steven Parker MD,2152925780,Cardiology,57-1339451,5635 Juniper Lane,Floor 5,Denver,CO,80201,303-555-2609,Active,Preferred
+PROV-141,Lakeside Radiology,3389287503,Radiology,21-4153037,7337 Mission Street,Floor 12,Miami,FL,33101,305-555-9462,Active,Out-of-Network
+PROV-142,City PhysicalTherapy,1434065879,Physical Therapy,77-1485669,2946 Mission Street,Suite 305,Seattle,WA,98101,206-555-1541,Active,In-Network
+PROV-143,Dr. Ryan Hall MD,4642375317,Gastroenterology,97-1512765,4063 Golden Street,,Columbus,OH,43201,614-555-8308,Active,Preferred
+PROV-144,Lakeside Imaging Center,3275571407,Hospital,98-2516524,4770 Sunset Blvd,,Buffalo,NY,14201,716-555-3669,Active,In-Network
+PROV-145,Dr. Melissa Martin MD,3799636574,Pediatrics,97-1149283,7867 5th Avenue,Suite 715,Denver,CO,80201,303-555-5135,Active,In-Network
+PROV-146,Dr. Sarah Walker MD,4370581558,Oncology,76-7663113,9676 Alamo Street,,Denver,CO,80201,303-555-7131,Active,In-Network
+PROV-147,Downtown Radiology,4168544512,Radiology,51-5645358,4378 Birch Lane,Suite 767,Detroit,MI,48201,313-555-3456,Active,In-Network
+PROV-148,Dr. Betty Young MD,3830955923,Cardiology,73-5959422,4350 Maple Drive,,Detroit,MI,48201,313-555-1578,Active,In-Network
+PROV-149,Dr. Anthony Campbell MD,4821413281,Psychiatry,31-4038955,4913 Alamo Street,,Denver,CO,80201,303-555-5237,Active,In-Network
+PROV-150,Dr. Anthony Walker MD,2899089320,Psychiatry,52-7235796,4369 Rose Lane,,Atlanta,GA,30301,404-555-2929,Active,In-Network
+PROV-151,Dr. Christopher Green MD,1830893658,Orthopedics,16-3529642,2350 Mission Street,,Columbus,OH,43201,614-555-8496,Active,In-Network
+PROV-152,Dr. Linda Lee MD,2436525794,Neurology,45-4512853,2862 Rose Lane,Suite 601,Buffalo,NY,14201,716-555-8105,Active,In-Network
+PROV-153,Dr. Patricia Allen MD,1140507249,Endocrinology,11-6405839,8800 Mission Street,,Phoenix,AZ,85001,602-555-1067,Active,Out-of-Network
+PROV-154,Dr. Edward Rodriguez MD,2210282113,Pediatrics,31-2095334,849 Lake Shore Dr,Floor 12,Phoenix,AZ,85001,602-555-8105,Active,Out-of-Network
+PROV-155,Dr. Linda Walker MD,2277042316,Psychiatry,61-1320859,3842 Biscayne Blvd,Suite 234,Phoenix,AZ,85001,602-555-9267,Terminated,Preferred
+PROV-156,Dr. James Allen MD,3928123020,Gastroenterology,16-2813842,423 Golden Gate Ave,Floor 8,New York,NY,10001,212-555-3024,Active,In-Network
+PROV-157,Dr. Matthew Parker MD,1423321334,General Surgery,76-5529464,2347 Maple Drive,Suite 207,Detroit,MI,48201,313-555-5631,Active,In-Network
+PROV-158,Dr. Christopher Martinez DO,2484315640,General Surgery,15-9327450,3502 Willow Way,Suite 438,Dallas,TX,75201,214-555-1208,Active,In-Network
+PROV-159,Dr. Donna Scott MD,2196725534,Dermatology,22-5293157,3887 Oak Avenue,Floor 5,Phoenix,AZ,85001,602-555-1820,Active,In-Network
+PROV-160,Dr. Brian Campbell MD,3557408869,Cardiology,15-1162274,2367 Palm Street,Floor 6,Houston,TX,77002,713-555-5395,Active,In-Network
+PROV-161,Dr. Charles Taylor MD,4529765405,Gastroenterology,59-9023619,7009 Birch Lane,Suite 270,Atlanta,GA,30301,404-555-1960,Pending,In-Network
+PROV-162,Dr. Patricia Nelson MD,4294627041,Urology,88-1483456,2240 Pine Street,Floor 7,New York,NY,10001,212-555-1753,Active,Out-of-Network
+PROV-163,Dr. Melissa Adams DO,2819239897,Psychiatry,98-2597897,7191 Palm Street,Floor 6,Austin,TX,78701,512-555-3435,Active,In-Network
+PROV-164,Dr. Joseph Green MD,4632398698,Internal Medicine,72-6379342,4046 Ocean Blvd,Suite 151,Detroit,MI,48201,313-555-7203,Active,In-Network
+PROV-165,Dr. Lisa Wright MD,1635213213,Orthopedics,73-1298116,1781 Mission Blvd,,Boston,MA,02101,617-555-9996,Active,In-Network
+PROV-166,Riverside Radiology,2802867083,Radiology,56-1910586,3752 Spruce Street,,Los Angeles,CA,90001,310-555-8751,Active,Preferred
+PROV-167,Dr. Donna Thompson DO,1466529415,Ophthalmology,47-9757456,6225 Willow Way,,Atlanta,GA,30301,404-555-3689,Active,Out-of-Network
+PROV-168,Dr. Sandra Harris DO,2229649816,Urology,68-4197381,5636 Alamo Street,Suite 147,Columbus,OH,43201,614-555-8381,Terminated,In-Network
+PROV-169,Dr. Helen Davis DO,4728268579,General Surgery,32-3913368,2203 Alamo Street,,Columbus,OH,43201,614-555-6273,Active,In-Network
+PROV-170,Dr. Barbara Garcia MD,3527209652,Urology,67-3237608,2363 Maple Drive,Floor 9,Detroit,MI,48201,313-555-9975,Pending,Preferred
+PROV-171,Dr. Maria Clark MD,3821955780,OB-GYN,32-9453929,8988 Willow Way,Floor 2,Seattle,WA,98101,206-555-8870,Active,Out-of-Network
+PROV-172,Downtown Family Medicine,4967910655,Hospital,58-3438177,969 Palm Street,,Denver,CO,80201,303-555-5374,Active,In-Network
+PROV-173,Advanced Radiology,2166607238,Radiology,79-1542011,5976 Juniper Lane,,Philadelphia,PA,19101,215-555-4675,Active,In-Network
+PROV-174,Dr. Barbara Clark MD,1509721231,Pediatrics,97-6245463,9146 Golden Gate Ave,,Atlanta,GA,30301,404-555-5117,Active,Preferred
+PROV-175,Dr. Ashley Evans MD,3910790724,Ophthalmology,35-4246352,4919 Oak Avenue,,Orlando,FL,32801,407-555-2220,Active,Out-of-Network
+PROV-176,Downtown PhysicalTherapy,4143630672,Physical Therapy,26-3699938,9668 Spruce Street,,New York,NY,10001,212-555-6415,Active,Out-of-Network
+PROV-177,Dr. William Mitchell DO,1930712117,Cardiology,94-6052539,8137 Sycamore St,,Columbus,OH,43201,614-555-6866,Terminated,Out-of-Network
+PROV-178,City PhysicalTherapy,2658996745,Physical Therapy,63-7768215,1606 Golden Street,,Austin,TX,78701,512-555-4495,Active,In-Network
+PROV-179,Dr. Matthew Perez MD,4702728525,Psychiatry,11-2924714,5768 Oak Avenue,,Phoenix,AZ,85001,602-555-4994,Active,Preferred
+PROV-180,Dr. Mark Allen MD,3680075399,Endocrinology,76-7290752,8526 Sycamore St,,San Diego,CA,92101,619-555-8975,Active,In-Network
+PROV-181,Dr. Kevin Moore MD,2930344435,OB-GYN,18-4536326,3592 Spruce Street,Floor 4,San Diego,CA,92101,619-555-2181,Active,In-Network
+PROV-182,Dr. Steven Brown MD,1178649475,Internal Medicine,81-2181822,9520 Juniper Lane,,Atlanta,GA,30301,404-555-5237,Active,Out-of-Network
+PROV-183,Dr. Amanda Lewis MD,1518224445,Ophthalmology,92-2060950,9694 Golden Gate Ave,Suite 174,Boston,MA,02101,617-555-5748,Active,In-Network
+PROV-184,Dr. Laura Allen MD,4982747173,Orthopedics,78-4688734,2334 Aspen Court,,Philadelphia,PA,19101,215-555-9941,Active,In-Network
+PROV-185,Advanced Radiology,1694342064,Radiology,15-1084386,9483 Olive Drive,,Chicago,IL,60601,312-555-9970,Active,In-Network
+PROV-186,Dr. Deborah Walker MD,2543084388,OB-GYN,28-3700366,3114 Biscayne Blvd,Suite 358,Austin,TX,78701,512-555-3971,Terminated,Preferred
+PROV-187,Oncology & Infusion Center,1412085927,Hospital,35-9173698,5520 Golden Street,,Phoenix,AZ,85001,602-555-4842,Active,In-Network
+PROV-188,Dr. William Scott MD,4452558912,Orthopedics,84-3556763,9366 Rose Lane,,Austin,TX,78701,512-555-6182,Active,In-Network
+PROV-189,Dr. Anthony Evans MD,4397082704,Internal Medicine,52-9052291,7683 Oak Avenue,,Boston,MA,02101,617-555-6004,Active,In-Network
+PROV-190,Dr. Kevin Robinson MD,2678336713,Neurology,90-2282825,1335 Sunset Blvd,Floor 1,Columbus,OH,43201,614-555-4485,Active,Out-of-Network
+PROV-191,Urgent Care Plus,2492794766,Hospital,85-5882155,2293 Oak Avenue,,San Diego,CA,92101,619-555-2483,Active,Preferred
+PROV-192,Downtown PhysicalTherapy,2966015789,Physical Therapy,75-3355029,7410 Pacific Blvd,,Boston,MA,02101,617-555-3395,Pending,Out-of-Network
+PROV-193,Dr. Linda Thompson DO,1383851293,Gastroenterology,36-9688672,6018 Mission Blvd,,Atlanta,GA,30301,404-555-8448,Active,In-Network
+PROV-194,Dr. Susan Roberts DO,3996437267,Psychiatry,82-3916715,6271 Birch Lane,,Los Angeles,CA,90001,310-555-2275,Active,Out-of-Network
+PROV-195,Dr. Anthony Adams MD,4478921345,Endocrinology,71-1110690,8322 5th Avenue,,Detroit,MI,48201,313-555-4768,Active,In-Network
+PROV-196,Dr. Joseph Hall DO,1809861078,OB-GYN,24-9078508,7944 Pine Street,,Austin,TX,78701,512-555-3641,Active,Preferred
+PROV-197,Dr. David Nelson MD,2244658840,Internal Medicine,83-3463987,1016 Pacific Blvd,,Phoenix,AZ,85001,602-555-3949,Active,In-Network
+PROV-198,Dr. Deborah Phillips MD,3192071758,Internal Medicine,70-9081054,2894 Biscayne Blvd,Suite 715,Detroit,MI,48201,313-555-9369,Active,Out-of-Network
+PROV-199,Dr. Betty Carter MD,1346760672,Psychiatry,12-4394845,8664 Spruce Street,Suite 800,Chicago,IL,60601,312-555-2577,Active,In-Network
+PROV-200,Dr. Karen Green MD,1200061963,Cardiology,87-1020136,7169 Cedar Street,,Buffalo,NY,14201,716-555-1711,Active,In-Network
