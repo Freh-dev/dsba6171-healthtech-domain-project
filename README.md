@@ -241,3 +241,16 @@ Claim line-level detail information. One row represents a single line item withi
 ## 7. Structured Data Relationships
 
 ### Entity Relationship Diagram (ERD)
+
+### Structured-to-Knowledge Linkages
+
+The microcosm is designed so that specific structured fields deterministically or through business rules route to specific documents in the knowledge corpus, connecting claim-level data to the policy language needed to justify a decision.
+
+| Structured Signal | Knowledge Needed | Why the Link Matters |
+|--------------------|-------------------|------------------------|
+| `procedure_catalog.coverage_policy_id` (e.g., procedure code 27447, Total Knee Arthroplasty → `coverage_policy_id` = `HLT-CLIN-009`) | Clinical Criteria for Common Procedures (`HLT-CLIN-009`) | The billed procedure must be checked against current clinical criteria to establish medical necessity before a claim can be approved, denied, or escalated. This is a declared foreign key, so retrieval is an exact-match lookup rather than a business rule. |
+| `insurance_plans.plan_type` + `insurance_plans.coverage_region` + `claims_ledger.claim_service_start_date` (e.g., Silver HMO, coverage_region includes CA, service start date in 2024) | Silver HMO Plan Benefits Booklet, 2024 version (`HLT-POL-002`, superseded) | The plan booklet defines member coverage and cost-share. Because `HLT-POL-002` is a superseded version, retrieval must be point-in-time aware: a claim from 2024 must be evaluated against the booklet that was authoritative then, not the current plan document. |
+| `patient_accounts.state` (e.g., `state = CA`) | California State Mandated Benefits Addendum (`HLT-STATE-CA`) | State-mandated benefits can supplement or override national plan terms. Jurisdiction-based routing ensures a state-specific requirement isn't missed in favor of the national policy alone. |
+
+*(See `metadata/structured_to_knowledge_linkages.csv` for the full linkage record with IDs and document references.)*
+
