@@ -254,3 +254,15 @@ The microcosm is designed so that specific structured fields deterministically o
 
 *(See `metadata/structured_to_knowledge_linkages.csv` for the full linkage record with IDs and document references.)*
 
+
+## 8. Controlled Data & Knowledge Quality Problems
+
+The microcosm intentionally includes three controlled quality problems spanning three different architecture layers, to support validation, quarantine, and governance exercises in later assignments.
+
+| Issue ID | Category | Layer | Description |
+|----------|----------|-------|-------------|
+| `QI-001` | Document authority status | Knowledge corpus / governance metadata | `HLT-PROD-01` (Prior Authorization Requirements Matrix) has `authority_status = Draft` and no implemented linkage in `structured_to_knowledge_linkages.csv`. It is discoverable in the corpus but not yet authoritative and not yet wired into a confirmed retrieval path. |
+| `QI-002` | Document version / currency | Knowledge corpus / document lifecycle | `HLT-POL-002` (Silver HMO Plan Benefits Booklet, 2024) has `authority_status = Superseded` and is the retrieval target of implemented linkage `LNK-002`. It is correct only when matched against a claim's service date within its effective period; naive matching on plan attributes alone would misapply it to current-year claims. |
+| `QI-003` | Structured data integrity (duplicate transaction) | Structured data / ingestion | A near-duplicate claim in `claims_ledger.csv`: the same member, provider, plan, and service dates resubmitted under a new `claim_id`, simulating a provider resubmission rather than a true new event. |
+
+*(Full detail, including detection point and intended use for each issue, is documented in `metadata/quality_issues_log.csv`.)*
