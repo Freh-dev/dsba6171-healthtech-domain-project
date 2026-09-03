@@ -266,3 +266,15 @@ The microcosm intentionally includes three controlled quality problems spanning 
 | `QI-003` | Structured data integrity (duplicate transaction) | Structured data / ingestion | A near-duplicate claim in `claims_ledger.csv`: the same member, provider, plan, and service dates resubmitted under a new `claim_id`, simulating a provider resubmission rather than a true new event. |
 
 *(Full detail, including detection point and intended use for each issue, is documented in `metadata/quality_issues_log.csv`.)*
+
+
+
+## 9. Business Risk Matrix
+
+The table below maps each controlled quality/governance problem (see Section 8 and `metadata/quality_issues_log.csv`) to its potential downstream AI and business consequences, and the control that would prevent it in a production system.
+
+| Data / Knowledge Issue | Architecture Layer | Potential AI Impact | Business Impact | Future Control |
+|--------------------------|----------------------|------------------------|---------------------|---------------------|
+| `QI-001` — Draft, unlinked document (`HLT-PROD-01`) present in corpus | Knowledge corpus / governance metadata | If indexed and later linked without a status check, an AI retrieval system could surface draft, not-yet-approved prior-authorization rules as if they were policy | A claim could be approved, denied, or escalated based on requirements that were never formally adopted — an indefensible decision in an audit or appeal | Require `authority_status = Current` (or `Approved`) as a mandatory filter before any document is eligible for indexing/retrieval |
+| `QI-002` — Superseded document (`HLT-POL-002`) retrievable without point-in-time check | Knowledge corpus / document lifecycle | Naive retrieval matching only on `plan_type`/`coverage_region` could return the 2024 booklet for a current-year claim, applying outdated coverage terms | Member could be under- or over-charged (wrong copay/coinsurance/deductible applied), creating billing errors and potential regulatory exposure | Enforce point-in-time retrieval logic: match document `effective_date`/`termination_date` against the claim's `claim_service_start_date`, not just plan attributes |
+| `QI-003` — Near-duplicate claim in `claims_ledger.csv` | Structured data / ingestion | An AI or analytics layer built on top of raw claim counts would double-count the event, treating a resubmission as two independent claims | Inflated claim volume and paid-amount totals; potential duplicate payment to the provider; distorted fraud/waste/abuse (FWA) detection signals | Idempotency key at ingestion (e.g., hash of member_id + provider_id + service dates + procedure) with deduplication/quarantine before load into `claims_ledger.csv` |
