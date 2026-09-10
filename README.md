@@ -6,6 +6,8 @@ This repository contains the **HealthTech Domain Data & Knowledge Microcosm** de
 
 The project models a realistic medical claims review and payer auditing environment using structured healthcare data, source documents, metadata, and domain relationships. The microcosm is designed to support data engineering, knowledge retrieval, AI-assisted decision support, explainability, and governance in subsequent course assignments.
 
+> **Data Disclaimer:** All structured member and provider records are synthetic and created solely for educational purposes. No real PHI, PII, or confidential data is used.
+
 ---
 
 ## 1. Assigned Domain
@@ -241,6 +243,10 @@ Claim line-level detail information. One row represents a single line item withi
 ## 7. Structured Data Relationships
 
 ### Entity Relationship Diagram (ERD)
+
+![Domain Microcosm ERD](architecture/domain_microcosm_erd.png)
+
+*Figure 1 — Entity Relationship Diagram showing all six structured tables (`patient_accounts`, `providers`, `insurance_plans`, `procedure_catalog`, `claims_ledger`, `claim_line_items`), their primary/foreign keys, and cardinalities, as summarized in the Relationship Summary table above.*
 
 ### Structured-to-Knowledge Linkages
 
