@@ -1,0 +1,12 @@
+schema_id,field_name,data_type,nullable,allowed_values_constraints,key_status,notes
+claim_line_items_schema_v1.0,claim_line_id,string (LI-#####),No,Unique,PK,
+claim_line_items_schema_v1.0,claim_id,string (CLM-#####),No,Must exist in claims_ledger.claim_id,FK,
+claim_line_items_schema_v1.0,line_number,integer,No,>= 1; unique within claim_id,-,A single claim_id can have multiple line_number values (e.g. CLM-10097 has lines 1-2)
+claim_line_items_schema_v1.0,procedure_code,string (CPT-#####),No,Must exist in procedure_catalog.procedure_code,FK,
+claim_line_items_schema_v1.0,service_date,date (ISO 8601 YYYY-MM-DD),No,Must fall within parent claim's claim_service_start_date/claim_service_end_date,-,
+claim_line_items_schema_v1.0,units,integer,No,>= 1,-,Observed values in current data: 1 and 2
+claim_line_items_schema_v1.0,billed_amount,decimal(10;2),No,> 0,-,"Semantic contract: represents the TOTAL billed for the line (unit price x units), not a per-unit rate. See semantic-failure example for the risk if this is misread."
+claim_line_items_schema_v1.0,allowed_amount,decimal(10;2),No,">= 0; <= billed_amount when > 0",-,0.00 is a valid value meaning not-yet-adjudicated; it is not a missing-data flag
+claim_line_items_schema_v1.0,paid_amount,decimal(10;2),No,">= 0; <= allowed_amount when > 0",-,0.00 is a valid value meaning not-yet-paid; it is not a missing-data flag
+claim_line_items_schema_v1.0,modifier_code,string,Yes,"Valid CPT modifier (observed: RT, LT, 50, 26) or blank",-,
+claim_line_items_schema_v1.0,denial_reason_code,string,Yes,"Populated only when line is denied/adjusted; pattern <GroupCode>-<ReasonNumber> (observed: CO-10, CO-11, CO-12, CO-13, CO-50, OA-23, PR-16, PR-6)",-,
