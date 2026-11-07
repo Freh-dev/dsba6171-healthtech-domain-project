@@ -1,0 +1,211 @@
+{
+  "name": "A3_Manual_Trigger",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -1420,
+        500
+      ],
+      "id": "77f270bc-1d20-4950-9b93-f8d355af7426",
+      "name": "When chat message received",
+      "webhookId": "6fc62597-a25e-4a4a-9a1d-71fea23fca0e"
+    },
+    {
+      "parameters": {
+        "mode": "load",
+        "memoryKey": {
+          "__rl": true,
+          "value": "health_claims_1000",
+          "mode": "id"
+        },
+        "prompt": "={{ $json.chatInput }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.2,
+      "position": [
+        -800,
+        780
+      ],
+      "id": "2b075984-f4d8-465a-b173-c2807504677f",
+      "name": "Simple Vector Store1"
+    },
+    {
+      "parameters": {
+        "model": "nomic-embed-text:latest"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        -712,
+        1000
+      ],
+      "id": "4522f79f-5f74-4e94-ae17-e6c9ccb07385",
+      "name": "Embeddings Ollama1",
+      "credentials": {
+        "ollamaApi": {
+          "id": "d4B1b3atpJaWWjCE",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You must call the health_plan_knowledge tool before answering every question. Answer only from what the tool returns. For each fact, cite source_document, plan_year and authority_status. \nIf the retrieved chunks do not contain the answer, say what was retrieved and that it is insufficient. Reply in plain text with no XML tags.",
+          "returnIntermediateSteps": true
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        -840,
+        80
+      ],
+      "id": "db46ce83-6291-4b36-9546-25e348e96c19",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "qwen3:4b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -860,
+        300
+      ],
+      "id": "4977c224-ab8d-47ea-b3be-e3e0ec9f65a7",
+      "name": "Ollama Chat Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "d4B1b3atpJaWWjCE",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolName": "health_plan_knowledge",
+        "toolDescription": "Searches health plan benefits, state mandates, and claims procedures.",
+        "memoryKey": {
+          "__rl": true,
+          "value": "health_claims_1000",
+          "mode": "id"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.2,
+      "position": [
+        -740,
+        302.5
+      ],
+      "id": "5972d23f-15d2-4e30-a138-81561dea556a",
+      "name": "Simple Vector Store"
+    },
+    {
+      "parameters": {
+        "model": "nomic-embed-text:latest"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        -652,
+        500
+      ],
+      "id": "a870f9ae-de4a-4ba9-a649-508813c92279",
+      "name": "Embeddings Ollama",
+      "credentials": {
+        "ollamaApi": {
+          "id": "d4B1b3atpJaWWjCE",
+          "name": "Ollama account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Simple Vector Store1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama1": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Vector Store": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "79826512-cde2-473f-b41b-21a3294971c6",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7a3f612e4397274fc6bfabaf4161d3efd2011ccc16e66643cb21b461cc09017d"
+  },
+  "id": "VE4OVXMd8foIzq3w",
+  "tags": []
+}
