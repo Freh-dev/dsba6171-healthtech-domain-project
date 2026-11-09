@@ -1,0 +1,187 @@
+{
+  "n8n_version": "2.46.6",
+  "workflow_name": "A3_DZ_4D_fix_1000_K4",
+  "workflow_id": "f1x1000K4dz00001",
+  "execution_id": 54,
+  "architecture_change": "Added Merge node (Join All Docs, mergeMode: append) to combine the 2 PDF and 3 MD/TXT items into one 5-document batch before a single-pass Simple Vector Store (Insert) execution.",
+  "question": "What is the annual deductible for the Gold PPO plan in 2025?",
+  "embedding_model": "nomic-embed-text:latest",
+  "chunking": {
+    "splitter": "RecursiveCharacterTextSplitter",
+    "chunkSize": 1000,
+    "chunkOverlap": 200
+  },
+  "retrieval_config": {
+    "mode": "load (Get Many)",
+    "topK": 4,
+    "includeDocumentMetadata": true,
+    "memoryKey": "dz_fix_1000_k4"
+  },
+  "ingestion_passes_summary": {
+    "pass_1": {
+      "run_index": 0,
+      "description": "Single combined pass of Simple Vector Store inserting all 23 chunks across all 5 source documents",
+      "total_chunks": 23,
+      "chunks_by_document": {
+        "Gold_PPO_2025.pdf": 7,
+        "Silver_HMO_2024.pdf": 6,
+        "CA_Mandates.md": 4,
+        "Draft_PriorAuth.md": 3,
+        "Claims_FAQ.txt": 3
+      }
+    }
+  },
+  "standalone_team_workflow_verification": {
+    "status": "verified_in_running_server_session",
+    "server_url": "http://localhost:5678",
+    "step_1_ingestion": {
+      "workflow_name": "A3_Ingestion_pipeline_fixed",
+      "workflow_id": "ingFixedHealth10",
+      "execution_id": 56,
+      "status": "success",
+      "memoryKey": "health_claims_1000",
+      "total_chunks_inserted": 23
+    },
+    "step_2_separate_retrieval": {
+      "workflow_name": "A3_Separate_Retrieval_health_claims_1000",
+      "workflow_id": "retrievalHealth1",
+      "execution_id": 57,
+      "status": "success",
+      "memoryKey": "health_claims_1000",
+      "topK": 4,
+      "verified_retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 0.791305792780314,
+          "document": "Gold_PPO_2025.pdf",
+          "lines": {
+            "from": 1,
+            "to": 12
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7712571617404459,
+          "document": "Gold_PPO_2025.pdf",
+          "lines": {
+            "from": 51,
+            "to": 69
+          },
+          "key_finding": "Annual Deductible: Individual $1,000 in-network / $2,000 out-of-network; Family $2,000 in-network / $4,000 out-of-network"
+        },
+        {
+          "rank": 3,
+          "score": 0.7404381717607011,
+          "document": "Gold_PPO_2025.pdf",
+          "lines": {
+            "from": 93,
+            "to": 97
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7214752080337072,
+          "document": "Silver_HMO_2024.pdf",
+          "lines": {
+            "from": 45,
+            "to": 65
+          }
+        }
+      ]
+    }
+  },
+  "retrieved_top4": [
+    {
+      "rank": 1,
+      "score": 0.791305792780314,
+      "document": {
+        "pageContent": "Gold PPO Plan • PLAN-001 • Benefits Summary Page 1\nGOLD PPO\nPlan Benefits Booklet\n2025\nPlan Name Gold PPO\nPlan ID PLAN-001\nEffective Date January 1, 2025\nPlan Type Preferred Provider Organization (PPO)\nWelcome to Your Gold PPO Plan\nThis booklet summarizes your health benefits under the Gold PPO plan. It explains covered services, your\nfinancial responsibilities, and important exclusions and limitations.\nBenefits summary accurate as of January 1, 2025.",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 1,
+              "to": 12
+            }
+          },
+          "source_document": "Gold_PPO_2025.pdf",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+          "plan_type": "Gold PPO",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "General"
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.7712571617404459,
+      "document": {
+        "pageContent": "Gold PPO Plan • PLAN-001 • Benefits Summary Page 3\n2. Cost-Sharing Summary\nCost-Sharing Element In-Network Out-of-Network\nAnnual Deductible (Individual) $1,000 $2,000\nAnnual Deductible (Family) $2,000 $4,000\nOut-of-Pocket Maximum (Individual) $6,000 $12,000\nOut-of-Pocket Maximum (Family) $12,000 $24,000\nCoinsurance (after deductible) 20% 40%\nPrimary Care Copay $25 Not covered\nSpecialist Copay $50 Not covered\nCost-sharing amounts may apply according to service category, network status, deductible, and applicable coinsurance.\n3. Exclusions & Limitations\nThe following services are NOT covered under this plan, subject to the stated exceptions or limitations:\n• Cosmetic surgery (unless medically necessary)\n• Experimental or investigational treatments\n• Infertility treatments (excluding diagnostic testing)\n• Weight loss surgery (unless BMI ≥ 40 with comorbidities)\n• Acupuncture and chiropractic care (limited to 20 visits/year)\n• Routine eye exams and glasses (for members under 18 only)",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 51,
+              "to": 69
+            }
+          },
+          "source_document": "Gold_PPO_2025.pdf",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+          "plan_type": "Gold PPO",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "General"
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.7404381717607011,
+      "document": {
+        "pageContent": "• Benefits are subject to change with 60 days’ notice\n• This document is a summary and does not replace the formal policy document\nReference This benefits summary is accurate as of January 1, 2025. For complete details, refer to\nyour Evidence of Coverage (EOC) document.\nGold PPO • PLAN-001 • 2025 Benefits Booklet",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 93,
+              "to": 97
+            }
+          },
+          "source_document": "Gold_PPO_2025.pdf",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+          "plan_type": "Gold PPO",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "General"
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "score": 0.7214752080337072,
+      "document": {
+        "pageContent": "Silver HMO Plan • PLAN-002 • 2024 Benefits Summary Page 3\n3. Cost-Sharing Summary\nCost-Sharing Element In-Network Out-of-Network\nAnnual Deductible (Individual) $2,500 Not covered\nAnnual Deductible (Family) $5,000 Not covered\nOut-of-Pocket Maximum (Individual) $8,000 Not covered\nOut-of-Pocket Maximum (Family) $16,000 Not covered\nCoinsurance (after deductible) 30% Not covered\nPrimary Care Copay $35 Not covered\nSpecialist Copay $70 Not covered\n4. Exclusions & Limitations\nSame exclusions as Gold PPO, plus:\n• Out-of-network services are not covered (except emergencies)\n• Referral must be obtained before specialist visit\n• Services without referral will be denied\n• Cosmetic surgery (unless medically necessary)\n• Experimental or investigational treatments\n• Infertility treatments (excluding diagnostic testing)\n• Weight loss surgery (unless BMI ≥ 40 with comorbidities)\n• Acupuncture and chiropractic care (limited to 20 visits/year)\n• Routine eye exams and glasses (for members under 18 only)",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 45,
+              "to": 65
+            }
+          },
+          "source_document": "Silver_HMO_2024.pdf",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-002_Silver_HMO_Benefits_2024.pdf",
+          "plan_type": "Silver HMO",
+          "plan_year": "2024",
+          "authority_status": "Superseded",
+          "jurisdiction": "General"
+        }
+      }
+    }
+  ]
+}

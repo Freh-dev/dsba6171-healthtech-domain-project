@@ -1,0 +1,134 @@
+{
+  "n8n_version": "2.46.6",
+  "workflow_name": "A3_DZ_4C_baseline_1000_K4",
+  "workflow_id": "b4s3L1n31000K4dz",
+  "execution_id": 53,
+  "question": "What is the annual deductible for the Gold PPO plan in 2025?",
+  "embedding_model": "nomic-embed-text:latest",
+  "chunking": {
+    "splitter": "RecursiveCharacterTextSplitter",
+    "chunkSize": 1000,
+    "chunkOverlap": 200
+  },
+  "retrieval_config": {
+    "mode": "load (Get Many)",
+    "topK": 4,
+    "includeDocumentMetadata": true,
+    "memoryKey": "dz_baseline_1000_k4"
+  },
+  "ingestion_passes_summary": {
+    "pass_1": {
+      "run_index": 0,
+      "description": "PDF branch processed through Extract from File and Attach Metadata",
+      "total_chunks": 13,
+      "chunks_by_document": {
+        "Gold_PPO_2025.pdf": 7,
+        "Silver_HMO_2024.pdf": 6
+      }
+    },
+    "pass_2": {
+      "run_index": 1,
+      "description": "Text and markdown branch processed through Extract from File1 and Attach Metadata; clearStore: true wiped Pass 1 chunks from the in-memory vector store",
+      "total_chunks": 10,
+      "chunks_by_document": {
+        "CA_Mandates.md": 4,
+        "Draft_PriorAuth.md": 3,
+        "Claims_FAQ.txt": 3
+      }
+    }
+  },
+  "retrieved_top4": [
+    {
+      "rank": 1,
+      "score": 0.595826434034015,
+      "document": {
+        "pageContent": "## 2. Mandated Benefits Summary\n\n| Mandate | Coverage Requirement | Effective Date |\n|---|---|---|\n| Cancer Screening (Breast) | Annual mammogram for women 40+ | 2023-01-01 |\n| Cancer Screening (Cervical) | HPV testing every 3 years (age 30+) | 2024-01-01 |\n| Cancer Screening (Colon) | Colonoscopy every 10 years (age 50+) | 2022-01-01 |\n| Diabetes Management | Insulin pumps and supplies (covered) | 2025-01-01 |\n| Mental Health Parity | Equal coverage for mental health services | 2022-01-01 |\n| Autism/Developmental | Behavioral health treatment for autism | 2023-07-01 |\n| Maternity Care | Minimum 48-hour inpatient stay (vaginal) | 2018-01-01 |\n| Maternity Care | Minimum 96-hour inpatient stay (C-section) | 2018-01-01 |\n| Reproductive Health | Contraception coverage (all FDA methods) | 2020-01-01 |\n\n## 3. Specific Coverage Requirements\n\n### 3.1 Contraception Coverage",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 18,
+              "to": 34
+            }
+          },
+          "source_document": "CA_Mandates.md",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-STATE-CA_CA_Mandated_Benefits.md",
+          "plan_type": "State Mandate",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "California"
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.5535383198597527,
+      "document": {
+        "pageContent": "# California State Mandated Benefits Addendum\n\n| | |\n|---|---|\n| **Document ID** | HLT-STATE-CA |\n| **Effective Date** | January 1, 2026 |\n| **Version** | 2026 |\n| **Authority Status** | Current |\n| **Jurisdiction** | California |\n| **Department** | Compliance |\n\n---\n\n## 1. Purpose\n\nThis addendum outlines California-specific mandated benefits applicable to all health plans operating in California. These requirements are in addition to base plan benefits.\n\n## 2. Mandated Benefits Summary",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 1,
+              "to": 18
+            }
+          },
+          "source_document": "CA_Mandates.md",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-STATE-CA_CA_Mandated_Benefits.md",
+          "plan_type": "State Mandate",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "California"
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.5375648788989444,
+      "document": {
+        "pageContent": "## 4. Penalties for Non-Compliance\n\n- Fines up to $100,000 per violation\n- Civil penalties up to $500,000\n- Suspension of license to sell in California\n\n## 5. Applicability\n\n- Applies to all claims with region = `'CA'`\n- Applies to all plan types in CA (including CA DMHC-regulated plans)\n\n---\n\n*This document is a synthetic adaptation of CA DMHC guidance for educational purposes.*",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 58,
+              "to": 71
+            }
+          },
+          "source_document": "CA_Mandates.md",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-STATE-CA_CA_Mandated_Benefits.md",
+          "plan_type": "State Mandate",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "California"
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "score": 0.5366842549064663,
+      "document": {
+        "pageContent": "## 3. Specific Coverage Requirements\n\n### 3.1 Contraception Coverage\n\n- All FDA-approved contraception methods covered (no copay)\n- Any FDA-approved prescription method must be covered\n- 12-month supply allowed at one time\n\n### 3.2 Maternity Care (California Knox-Keene Act)\n\n- Minimum 48-hour hospital stay (vaginal delivery)\n- Minimum 96-hour hospital stay (C-section delivery)\n- Postpartum follow-up visit within 14 days\n\n### 3.3 Mental Health Parity (AB 88)\n\n- No annual or lifetime limits on mental health benefits\n- Same cost-sharing as medical/surgical benefits\n- Timely access to mental health providers\n\n### 3.4 Autism and Developmental Disabilities (SB 946)\n\n- Behavioral health treatment (ABA therapy) covered\n- Up to 24 months of treatment initially\n- Medical necessity determination every 6 months\n\n## 4. Penalties for Non-Compliance\n\n- Fines up to $100,000 per violation\n- Civil penalties up to $500,000\n- Suspension of license to sell in California\n\n## 5. Applicability",
+        "metadata": {
+          "source": "blob",
+          "blobType": "text/plain",
+          "loc": {
+            "lines": {
+              "from": 32,
+              "to": 64
+            }
+          },
+          "source_document": "CA_Mandates.md",
+          "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-STATE-CA_CA_Mandated_Benefits.md",
+          "plan_type": "State Mandate",
+          "plan_year": "2025",
+          "authority_status": "Approved",
+          "jurisdiction": "California"
+        }
+      }
+    }
+  ]
+}
