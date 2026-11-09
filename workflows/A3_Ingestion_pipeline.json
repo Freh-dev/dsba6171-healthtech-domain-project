@@ -1,5 +1,5 @@
 {
-  "name": "A3_Ingestion_pipeline",
+  "name": "My workflow",
   "nodes": [
     {
       "parameters": {
@@ -15,10 +15,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -20,
-        60
+        -1140,
+        -320
       ],
-      "id": "d3060f37-5806-45fa-87f1-cca64386f6a0",
+      "id": "644223c5-5013-4df6-9edb-0c44d7ee1594",
       "name": "HTTP Request"
     },
     {
@@ -26,10 +26,10 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        -680,
-        60
+        -1800,
+        -320
       ],
-      "id": "b1581b1f-9590-41d5-bc62-e8cb637b7097",
+      "id": "1a28d49f-1fdd-4233-b3f2-b471b85e95bc",
       "name": "When clicking ‘Execute workflow’"
     },
     {
@@ -49,10 +49,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -460,
-        60
+        -1580,
+        -320
       ],
-      "id": "542efc8c-f704-4e7c-8423-7f33c6323338",
+      "id": "21249658-64af-4eb3-9f37-965b5fef1497",
       "name": "Edit Fields"
     },
     {
@@ -82,10 +82,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        200,
-        60
+        -920,
+        -320
       ],
-      "id": "abeb5181-5f4b-49bf-957c-91831c90c833",
+      "id": "7ffaed28-9d20-43c3-9b7d-af5103f4c756",
       "name": "If"
     },
     {
@@ -96,10 +96,10 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        420,
-        -40
+        -700,
+        -420
       ],
-      "id": "83240c97-bd6f-4e6d-8d58-02b89d759b02",
+      "id": "e6c5d593-4cb0-46ae-a2d9-fc097f5cff69",
       "name": "Extract from File"
     },
     {
@@ -110,10 +110,10 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        420,
-        160
+        -700,
+        -220
       ],
-      "id": "0d4e2250-ed42-4261-9f45-4e0a89ba5273",
+      "id": "d3f0ead7-b45e-497d-a36e-38939f576268",
       "name": "Extract from File1"
     },
     {
@@ -129,10 +129,10 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
       "typeVersion": 1.2,
       "position": [
-        876,
-        60
+        -20,
+        -320
       ],
-      "id": "edf5b0fe-a2e2-4d8e-b619-8e9d47575007",
+      "id": "d77f4958-bd54-47f2-b96b-5fec7a4d6cd9",
       "name": "Simple Vector Store"
     },
     {
@@ -173,10 +173,10 @@
       "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
       "typeVersion": 1,
       "position": [
-        980,
-        282.5
+        80,
+        -100
       ],
-      "id": "a4b7e62b-f92f-471f-a2f6-4ea64c1e932b",
+      "id": "86e82db6-2014-4a13-973c-7ebae0d1295d",
       "name": "Default Data Loader"
     },
     {
@@ -186,10 +186,10 @@
       "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
       "typeVersion": 1,
       "position": [
-        860,
-        280
+        -40,
+        -100
       ],
-      "id": "a593b455-0750-4cd2-858a-871f7950761a",
+      "id": "a9412cbb-827d-4d43-a790-d45ab91d6794",
       "name": "Embeddings Ollama",
       "credentials": {
         "ollamaApi": {
@@ -206,10 +206,10 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        -240,
-        60
+        -1360,
+        -320
       ],
-      "id": "5a3987d7-b48b-45a8-b668-6c1af9b1dc16",
+      "id": "271216b7-6ef2-4c7d-8c38-9c7b7a981d37",
       "name": "Split Out"
     },
     {
@@ -220,10 +220,10 @@
       "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
       "typeVersion": 1,
       "position": [
-        1068,
-        480
+        180,
+        100
       ],
-      "id": "cc6c5737-23e2-4000-b231-8698cdbe60b9",
+      "id": "eb1d0509-3f13-43f5-bd87-5ebb5058700e",
       "name": "Recursive Character Text Splitter"
     },
     {
@@ -279,11 +279,22 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        640,
-        60
+        -260,
+        -320
       ],
-      "id": "9ea8df3b-e4ab-410c-8ed8-04b9ae21ec31",
+      "id": "61d7cbf0-fc7f-4d17-883d-42faf4a97ac4",
       "name": "Attach Metadata"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -480,
+        -320
+      ],
+      "id": "7397dfe7-4719-4733-87df-d8ce0e7beb2e",
+      "name": "Merge"
     }
   ],
   "pinData": {},
@@ -343,7 +354,7 @@
       "main": [
         [
           {
-            "node": "Attach Metadata",
+            "node": "Merge",
             "type": "main",
             "index": 0
           }
@@ -354,9 +365,9 @@
       "main": [
         [
           {
-            "node": "Attach Metadata",
+            "node": "Merge",
             "type": "main",
-            "index": 0
+            "index": 1
           }
         ]
       ]
@@ -415,17 +426,27 @@
           }
         ]
       ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Attach Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "268dab9e-752c-4143-9ed2-ba31bdaa0d6e",
+  "versionId": "c9129022-42b2-4f15-b6a7-4483beec7e7f",
   "meta": {
-    "templateCredsSetupCompleted": true,
     "instanceId": "7a3f612e4397274fc6bfabaf4161d3efd2011ccc16e66643cb21b461cc09017d"
   },
-  "id": "FUN1cewPgdBQiPDg",
+  "id": "AYXQNdLlhPkFtq2C",
   "tags": []
 }
