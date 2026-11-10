@@ -1,0 +1,202 @@
+{
+  "name": "A3_Retrieval_1000_200",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        432
+      ],
+      "id": "ec3102da-2db4-4337-90d8-98334d4dc764",
+      "name": "When chat message received",
+      "webhookId": "bbb0a48b-3cd2-4b17-84fc-e8dbb04fb273"
+    },
+    {
+      "parameters": {
+        "mode": "load",
+        "memoryKey": {
+          "__rl": true,
+          "value": "health_claims_1000",
+          "mode": "id"
+        },
+        "prompt": "={{ $json.chatInput }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.2,
+      "position": [
+        624,
+        704
+      ],
+      "id": "27894b5c-9b62-45ec-bcd1-c4d82bbe36da",
+      "name": "Simple Vector Store1"
+    },
+    {
+      "parameters": {
+        "model": "nomic-embed-text:latest"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        720,
+        928
+      ],
+      "id": "8c3a488e-31ca-42a5-a548-8541a00952f3",
+      "name": "Embeddings Ollama1",
+      "credentials": {
+        "ollamaApi": {
+          "id": "1O9iDxAkHTGGnS7P",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You must call the health_plan_knowledge tool before answering every question. Answer only from what the tool returns. For each fact, cite source_document, plan_year and authority_status. \nIf the retrieved chunks do not contain the answer, say what was retrieved and that it is insufficient. Reply in plain text with no XML tags.",
+          "returnIntermediateSteps": true
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        592,
+        0
+      ],
+      "id": "2d774676-a0a5-4d83-94f5-d56788ed27ad",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "qwen3:4b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        560,
+        224
+      ],
+      "id": "c058171a-a893-44dc-8b52-1e1c5e00aba3",
+      "name": "Ollama Chat Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "1O9iDxAkHTGGnS7P",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolName": "health_plan_knowledge",
+        "toolDescription": "Searches health plan benefits, state mandates, and claims procedures.",
+        "memoryKey": {
+          "__rl": true,
+          "value": "health_claims_1000",
+          "mode": "id"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.2,
+      "position": [
+        688,
+        224
+      ],
+      "id": "fb5c63ae-ddd3-457a-850d-56e93a000c1a",
+      "name": "Simple Vector Store"
+    },
+    {
+      "parameters": {
+        "model": "nomic-embed-text:latest"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        768,
+        432
+      ],
+      "id": "8f90483c-687a-467b-8ceb-0c805d783b0d",
+      "name": "Embeddings Ollama",
+      "credentials": {
+        "ollamaApi": {
+          "id": "1O9iDxAkHTGGnS7P",
+          "name": "Ollama account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama1": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Vector Store": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "78b53eac-afb4-46d3-82a7-cb6f57b90d2b",
+  "meta": {
+    "instanceId": "4ed8831e6c55542f135b042bcdd6de4905752533e9c737125af4bb137d996c5e"
+  },
+  "nodeGroups": [],
+  "id": "5A78HG68w5aShob1",
+  "tags": []
+}

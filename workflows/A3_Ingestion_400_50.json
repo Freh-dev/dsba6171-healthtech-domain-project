@@ -1,0 +1,527 @@
+{
+  "name": "A3_Ingestion_400_50",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "={{ $json.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        672,
+        112
+      ],
+      "id": "9b1c2622-80cd-49a7-9d9d-f0182b92bfb1",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        112
+      ],
+      "id": "b008edfa-9aea-4c60-9e38-7fa3df3635b3",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9f94d024-fb03-4ac7-93f0-fad04d6a99fc",
+              "name": "documents",
+              "value": "={{ [   {     \"url\": \"https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf\",     \"source_document\": \"Gold_PPO_2025.pdf\",     \"plan_type\": \"Gold PPO\",     \"plan_year\": \"2025\",     \"authority_status\": \"Approved\",     \"jurisdiction\": \"General\"   },   {     \"url\": \"https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-002_Silver_HMO_Benefits_2024.pdf\",     \"source_document\": \"Silver_HMO_2024.pdf\",     \"plan_type\": \"Silver HMO\",     \"plan_year\": \"2024\",     \"authority_status\": \"Superseded\",     \"jurisdiction\": \"General\"   },   {     \"url\": \"https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-STATE-CA_CA_Mandated_Benefits.md\",     \"source_document\": \"CA_Mandates.md\",     \"plan_type\": \"State Mandate\",     \"plan_year\": \"2025\",     \"authority_status\": \"Approved\",     \"jurisdiction\": \"California\"   },   {     \"url\": \"https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-PROD-01_Prior_Auth_Matrix.md\",     \"source_document\": \"Draft_PriorAuth.md\",     \"plan_type\": \"Matrix\",     \"plan_year\": \"2025\",     \"authority_status\": \"Draft\",     \"jurisdiction\": \"General\"   },   {     \"url\": \"https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-FAQ-003_Claims_Appeals_FAQ.txt\",     \"source_document\": \"Claims_FAQ.txt\",     \"plan_type\": \"Procedure FAQ\",     \"plan_year\": \"2025\",     \"authority_status\": \"Approved\",     \"jurisdiction\": \"General\"   } ] }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        224,
+        112
+      ],
+      "id": "b7cd0a03-b4ee-4062-9678-cd99102f2eee",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "31e2b560-7a0b-4b43-aa33-40756d249e76",
+              "leftValue": "={{ $('Split Out').item.json.url }}",
+              "rightValue": ".pdf",
+              "operator": {
+                "type": "string",
+                "operation": "endsWith"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        880,
+        112
+      ],
+      "id": "b63931e4-fbfa-4942-b8bb-2745e7f0fbee",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        1104,
+        0
+      ],
+      "id": "a4874d82-7b1b-44c3-b587-b5563fb187dd",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "operation": "text",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        1104,
+        208
+      ],
+      "id": "dd2e9c05-a922-4904-8207-5cad6c536976",
+      "name": "Extract from File1"
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "memoryKey": {
+          "__rl": true,
+          "value": "health_claims_400",
+          "mode": "id"
+        },
+        "clearStore": true
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.2,
+      "position": [
+        1792,
+        112
+      ],
+      "id": "7fcfa4bd-5d55-4b05-a577-282c447c54fc",
+      "name": "Simple Vector Store"
+    },
+    {
+      "parameters": {
+        "jsonMode": "expressionData",
+        "jsonData": "={{ $json.text }}",
+        "options": {
+          "metadata": {
+            "metadataValues": [
+              {
+                "name": "source_document",
+                "value": "={{ $json.source_document }}"
+              },
+              {
+                "name": "source_url",
+                "value": "={{ $json.source_url }}"
+              },
+              {
+                "name": "plan_type",
+                "value": "={{ $json.plan_type }}"
+              },
+              {
+                "name": "plan_year",
+                "value": "={{ $json.plan_year }}"
+              },
+              {
+                "name": "authority_status",
+                "value": "={{ $json.authority_status }}"
+              },
+              {
+                "name": "jurisdiction",
+                "value": "={{ $json.jurisdiction }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1,
+      "position": [
+        1888,
+        336
+      ],
+      "id": "d0788d8d-e1b8-4e93-8db9-b58da283f8e3",
+      "name": "Default Data Loader"
+    },
+    {
+      "parameters": {
+        "model": "nomic-embed-text:latest"
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        1744,
+        320
+      ],
+      "id": "a0677d24-3db7-4826-9b59-6eecbe5aae20",
+      "name": "Embeddings Ollama",
+      "credentials": {
+        "ollamaApi": {
+          "id": "1O9iDxAkHTGGnS7P",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "documents",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        448,
+        112
+      ],
+      "id": "67c46db4-f653-474a-9b9b-7989b45c1581",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "chunkSize": 400,
+        "chunkOverlap": 50,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        1952,
+        528
+      ],
+      "id": "80c36bf7-996b-469b-b012-76c6e32625ca",
+      "name": "Recursive Character Text Splitter"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "818d4314-e3f0-4e4f-beb4-46d717eadc7a",
+              "name": "text",
+              "value": "={{ $json.text ?? $json.data }}",
+              "type": "string"
+            },
+            {
+              "id": "17fd399a-6634-43c9-9206-a2de58e2a682",
+              "name": "source_document",
+              "value": "={{ $('Split Out').item.json.source_document }}",
+              "type": "string"
+            },
+            {
+              "id": "09ac213f-5b62-4481-a065-2da2bd72284a",
+              "name": "source_url",
+              "value": "={{ $('Split Out').item.json.url }}",
+              "type": "string"
+            },
+            {
+              "id": "d6428964-fa44-4f3c-8e6c-7a2d03ed9913",
+              "name": "plan_type",
+              "value": "={{ $('Split Out').item.json.plan_type }}",
+              "type": "string"
+            },
+            {
+              "id": "3f973c37-ebb5-4887-a87c-5dca3b0d570c",
+              "name": "plan_year",
+              "value": "={{ $('Split Out').item.json.plan_year }}",
+              "type": "string"
+            },
+            {
+              "id": "5cd9adf5-c8ad-4dcb-a12a-fb006a942323",
+              "name": "authority_status",
+              "value": "={{ $('Split Out').item.json.authority_status }}",
+              "type": "string"
+            },
+            {
+              "id": "3d510606-fc8b-4bc8-b2a5-511afa31e7ad",
+              "name": "jurisdiction",
+              "value": "={{ $('Split Out').item.json.jurisdiction }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1328,
+        0
+      ],
+      "id": "49b0068d-6a1d-44b0-811e-f592c4fd303c",
+      "name": "Attach Metadata"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "818d4314-e3f0-4e4f-beb4-46d717eadc7a",
+              "name": "text",
+              "value": "={{ $json.text ?? $json.data }}",
+              "type": "string"
+            },
+            {
+              "id": "17fd399a-6634-43c9-9206-a2de58e2a682",
+              "name": "source_document",
+              "value": "={{ $(\"Split Out\").item.json.source_document }}",
+              "type": "string"
+            },
+            {
+              "id": "09ac213f-5b62-4481-a065-2da2bd72284a",
+              "name": "source_url",
+              "value": "={{ $(\"Split Out\").item.json.url }}",
+              "type": "string"
+            },
+            {
+              "id": "d6428964-fa44-4f3c-8e6c-7a2d03ed9913",
+              "name": "plan_type",
+              "value": "={{ $(\"Split Out\").item.json.plan_type }}",
+              "type": "string"
+            },
+            {
+              "id": "3f973c37-ebb5-4887-a87c-5dca3b0d570c",
+              "name": "plan_year",
+              "value": "={{ $(\"Split Out\").item.json.plan_year }}",
+              "type": "string"
+            },
+            {
+              "id": "5cd9adf5-c8ad-4dcb-a12a-fb006a942323",
+              "name": "authority_status",
+              "value": "={{ $(\"Split Out\").item.json.authority_status }}",
+              "type": "string"
+            },
+            {
+              "id": "3d510606-fc8b-4bc8-b2a5-511afa31e7ad",
+              "name": "jurisdiction",
+              "value": "={{ $(\"Split Out\").item.json.jurisdiction }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1328,
+        208
+      ],
+      "id": "8a37013d-2758-46bd-874b-1041bc2e8dae",
+      "name": "Attach Metadata_txt"
+    },
+    {
+      "parameters": {},
+      "name": "Join All Docs",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        1552,
+        112
+      ],
+      "id": "6a07d044-3440-462f-adef-8cfd9b833f24",
+      "webhookId": "fca86eaf-2f61-443b-ae83-f286f0977413"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Attach Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File1": {
+      "main": [
+        [
+          {
+            "node": "Attach Metadata_txt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recursive Character Text Splitter": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attach Metadata": {
+      "main": [
+        [
+          {
+            "node": "Join All Docs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attach Metadata_txt": {
+      "main": [
+        [
+          {
+            "node": "Join All Docs",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Join All Docs": {
+      "main": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "be57edf3-4820-4b3d-9381-636b5362c506",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "4ed8831e6c55542f135b042bcdd6de4905752533e9c737125af4bb137d996c5e"
+  },
+  "nodeGroups": [],
+  "id": "xXkr1PD9ZR4KI3E2",
+  "tags": []
+}
