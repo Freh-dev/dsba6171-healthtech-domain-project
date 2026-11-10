@@ -1,0 +1,90 @@
+[
+  {
+    "document": {
+      "pageContent": "Gold PPO Plan • PLAN-001 • Benefits Summary Page 3\n2. Cost-Sharing Summary\nCost-Sharing Element In-Network Out-of-Network\nAnnual Deductible (Individual) $1,000 $2,000\nAnnual Deductible (Family) $2,000 $4,000\nOut-of-Pocket Maximum (Individual) $6,000 $12,000\nOut-of-Pocket Maximum (Family) $12,000 $24,000\nCoinsurance (after deductible) 20% 40%\nPrimary Care Copay $25 Not covered",
+      "metadata": {
+        "source": "blob",
+        "blobType": "text/plain",
+        "loc": {
+          "lines": {
+            "from": 51,
+            "to": 59
+          }
+        },
+        "source_document": "Gold_PPO_2025.pdf",
+        "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+        "plan_type": "Gold PPO",
+        "plan_year": "2025",
+        "authority_status": "Approved",
+        "jurisdiction": "General"
+      }
+    },
+    "score": 0.8069344851350617
+  },
+  {
+    "document": {
+      "pageContent": "Gold PPO Plan • PLAN-001 • Benefits Summary Page 1\nGOLD PPO\nPlan Benefits Booklet\n2025\nPlan Name Gold PPO\nPlan ID PLAN-001\nEffective Date January 1, 2025\nPlan Type Preferred Provider Organization (PPO)\nWelcome to Your Gold PPO Plan\nThis booklet summarizes your health benefits under the Gold PPO plan. It explains covered services, your",
+      "metadata": {
+        "source": "blob",
+        "blobType": "text/plain",
+        "loc": {
+          "lines": {
+            "from": 1,
+            "to": 10
+          }
+        },
+        "source_document": "Gold_PPO_2025.pdf",
+        "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+        "plan_type": "Gold PPO",
+        "plan_year": "2025",
+        "authority_status": "Approved",
+        "jurisdiction": "General"
+      }
+    },
+    "score": 0.7827688450957149
+  },
+  {
+    "document": {
+      "pageContent": "your Evidence of Coverage (EOC) document.\nGold PPO • PLAN-001 • 2025 Benefits Booklet",
+      "metadata": {
+        "source": "blob",
+        "blobType": "text/plain",
+        "loc": {
+          "lines": {
+            "from": 96,
+            "to": 97
+          }
+        },
+        "source_document": "Gold_PPO_2025.pdf",
+        "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+        "plan_type": "Gold PPO",
+        "plan_year": "2025",
+        "authority_status": "Approved",
+        "jurisdiction": "General"
+      }
+    },
+    "score": 0.752113091841522
+  },
+  {
+    "document": {
+      "pageContent": "Gold PPO Plan • PLAN-001 • Benefits Summary Page 2\n1. Covered Services\nThe following benefits describe the plan's covered services and member cost-sharing.\nPreventive Care\n• Annual physical exams: $0 copay (covered at 100%)\n• Routine immunizations: $0 copay\n• Cancer screenings: mammogram, colonoscopy — $0 copay\n• Well-woman visits: $0 copay\nPrimary Care",
+      "metadata": {
+        "source": "blob",
+        "blobType": "text/plain",
+        "loc": {
+          "lines": {
+            "from": 14,
+            "to": 22
+          }
+        },
+        "source_document": "Gold_PPO_2025.pdf",
+        "source_url": "https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf",
+        "plan_type": "Gold PPO",
+        "plan_year": "2025",
+        "authority_status": "Approved",
+        "jurisdiction": "General"
+      }
+    },
+    "score": 0.723472071724935
+  }
+]
