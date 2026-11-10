@@ -1,0 +1,163 @@
+TEST 2 - CONTEXT CONFLICT: RETRIEVAL EVIDENCE
+==============================================
+Workflow:   A3_Manual_Trigger (AI Agent, tool: health_plan_knowledge)
+Model:      qwen3:4b | Embeddings: nomic-embed-text:latest | Memory key: health_claims_1000
+Retrieval:  Top-K = 4 (default). Scores below come from the Simple Vector Store1 (Get Many) output for the same question;
+            the 4 chunks and their order match the agent's observation.
+
+QUESTION
+--------
+Does a Gold PPO member in California need prior authorization for a total knee replacement (CPT 27447)?
+
+AGENT TOOL INPUT
+----------------
+"Does a Gold PPO member in California need prior authorization for a total knee replacement (CPT 27447)?"
+
+AGENT ANSWER
+------------
+Yes, a Gold PPO member in California needs prior authorization for a total knee replacement (CPT 27447).
+According to the Gold PPO Plan (PLAN-001) for 2025, "Outpatient surgeries" require prior authorization.
+CPT 27447 falls under outpatient surgeries, so prior authorization is required.
+Source_document: Gold_PPO_2025.pdf, plan_year: 2025, authority_status: Approved.
+
+
+RETRIEVED CHUNKS (observation: the 4 chunks that reached the AI)
+================================================================
+
+--- CHUNK 1 of 4 ---------------------------------------------
+source_document:   Gold_PPO_2025.pdf
+plan_type:         Gold PPO
+plan_year:         2025
+authority_status:  Approved
+jurisdiction:      General
+lines:             74-94
+score:             0.750 (Get Many node, same query)
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf
+
+pageContent:
+Gold PPO Plan * PLAN-001 * Benefits Summary Page 4
+4. Prior Authorization Requirements
+The following services require prior authorization:
+- Inpatient hospital admissions (non-emergency)
+- Outpatient surgeries
+- MRI, CT, PET scans
+- Durable medical equipment over $500
+- Home health care services
+- Skilled nursing facility admissions
+- Transplant services
+Important: Failure to obtain prior authorization may result in denial of benefits.
+5. Appeals & Grievances
+If you disagree with a claim decision, you have the right to appeal:
+1 Internal Appeal: Submit in writing within 60 days
+2 External Review: If internal appeal is denied
+3 Urgent Appeal: Decision within 72 hours
+Member Services: 1-800-555-GOLD (4653)
+6. Important Notes
+- Coverage terminates on the last day of the month following premium delinquency
+- Benefits are subject to change with 60 days' notice
+- This document is a summary and does not replace the formal policy document
+
+Classification: DIRECTLY RELEVANT (Gold PPO 2025 prior-authorization list; CPT 27447 is not named)
+
+
+--- CHUNK 2 of 4 ---------------------------------------------
+source_document:   Silver_HMO_2024.pdf
+plan_type:         Silver HMO
+plan_year:         2024
+authority_status:  Superseded
+jurisdiction:      General
+lines:             69-86
+score:             0.706 (Get Many node, same query)
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-002_Silver_HMO_Benefits_2024.pdf
+
+pageContent:
+Silver HMO Plan * PLAN-002 * 2024 Benefits Summary Page 4
+5. Prior Authorization Requirements
+Same as Gold PPO. Referrals are required for specialist visits.
+- Inpatient hospital admissions (non-emergency)
+- Outpatient surgeries
+- MRI, CT, PET scans
+- Durable medical equipment over $500
+- Home health care services
+- Skilled nursing facility admissions
+- Transplant services
+- Specialist visits: Referral required from PCP before visit
+Important: Failure to obtain required prior authorization may result in denial of benefits. Services without
+required referrals may also be denied.
+SUPERSEDED
+NOTICE
+This document is SUPERSEDED. For current benefits, refer to the 2025 Gold PPO or
+new Silver plan documents.
+Silver HMO * PLAN-002 * 2024 Benefits Booklet
+
+Classification: IRRELEVANT / INAPPLICABLE (wrong plan, superseded; it should have been excluded)
+
+
+--- CHUNK 3 of 4 ---------------------------------------------
+source_document:   Gold_PPO_2025.pdf
+plan_type:         Gold PPO
+plan_year:         2025
+authority_status:  Approved
+jurisdiction:      General
+lines:             51-69
+score:             0.660 (Get Many node, same query)
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf
+
+pageContent:
+Gold PPO Plan * PLAN-001 * Benefits Summary Page 3
+2. Cost-Sharing Summary
+Cost-Sharing Element In-Network Out-of-Network
+Annual Deductible (Individual) $1,000 $2,000
+Annual Deductible (Family) $2,000 $4,000
+Out-of-Pocket Maximum (Individual) $6,000 $12,000
+Out-of-Pocket Maximum (Family) $12,000 $24,000
+Coinsurance (after deductible) 20% 40%
+Primary Care Copay $25 Not covered
+Specialist Copay $50 Not covered
+Cost-sharing amounts may apply according to service category, network status, deductible, and applicable coinsurance.
+3. Exclusions & Limitations
+The following services are NOT covered under this plan, subject to the stated exceptions or limitations:
+- Cosmetic surgery (unless medically necessary)
+- Experimental or investigational treatments
+- Infertility treatments (excluding diagnostic testing)
+- Weight loss surgery (unless BMI >= 40 with comorbidities)
+- Acupuncture and chiropractic care (limited to 20 visits/year)
+- Routine eye exams and glasses (for members under 18 only)
+
+Classification: IRRELEVANT (cost-sharing table; no prior-authorization content)
+
+
+--- CHUNK 4 of 4 ---------------------------------------------
+source_document:   Gold_PPO_2025.pdf
+plan_type:         Gold PPO
+plan_year:         2025
+authority_status:  Approved
+jurisdiction:      General
+lines:             93-97
+score:             0.653 (Get Many node, same query)
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf
+
+pageContent:
+- Benefits are subject to change with 60 days' notice
+- This document is a summary and does not replace the formal policy document
+Reference This benefits summary is accurate as of January 1, 2025. For complete details, refer to
+your Evidence of Coverage (EOC) document.
+Gold PPO * PLAN-001 * 2025 Benefits Booklet
+
+Classification: IRRELEVANT (closing notes)
+
+
+NOT RETRIEVED
+=============
+- Draft Prior Auth Matrix (Draft_PriorAuth.md, status Draft): did not reach the AI.
+- CA Mandates (CA_Mandates.md, jurisdiction California): did not reach the AI.
+- No retrieved chunk names CPT 27447 or a California-specific prior-authorization rule.
+
+SUMMARY
+=======
+Directly relevant: 1 of 4   |   Superseded / wrong-plan chunk reached the AI: yes (chunk 2, Silver HMO 2024)
+Final answer: "yes, prior authorization required" - supported by the Gold PPO 2025 list (outpatient surgeries),
+but the link from CPT 27447 to "outpatient surgeries" is the model's inference; it is not stated in any retrieved chunk.
+
+Note: Special characters (bullets, >=) were normalized to plain text in this file.
+The original n8n output is the source of record.

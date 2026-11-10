@@ -1,0 +1,144 @@
+TEST 1 - NORMAL CASE: RETRIEVAL EVIDENCE
+=========================================
+Workflow:   A3_Manual_Trigger (AI Agent, tool: health_plan_knowledge)
+Model:      qwen3:4b | Embeddings: nomic-embed-text:latest | Memory key: health_claims_1000
+Retrieval:  Top-K = 4 (default)
+
+QUESTION
+--------
+What is the annual deductible for the Gold PPO plan in 2025?
+
+AGENT TOOL INPUT
+----------------
+"What is the annual deductible for the Gold PPO plan in 2025?"
+
+AGENT ANSWER
+------------
+The annual deductible for the individual in-network in the Gold PPO plan for 2025 is $1,000.
+Source_document: Gold_PPO_2025.pdf, plan_year: 2025, authority_status: Approved.
+
+
+RETRIEVED CHUNKS (observation: the 4 chunks that reached the AI)
+================================================================
+
+--- CHUNK 1 of 4 ---------------------------------------------
+source_document:   Gold_PPO_2025.pdf
+plan_type:         Gold PPO
+plan_year:         2025
+authority_status:  Approved
+jurisdiction:      General
+lines:             1-12
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf
+
+pageContent:
+Gold PPO Plan * PLAN-001 * Benefits Summary Page 1
+GOLD PPO
+Plan Benefits Booklet
+2025
+Plan Name Gold PPO
+Plan ID PLAN-001
+Effective Date January 1, 2025
+Plan Type Preferred Provider Organization (PPO)
+Welcome to Your Gold PPO Plan
+This booklet summarizes your health benefits under the Gold PPO plan. It explains covered services, your
+financial responsibilities, and important exclusions and limitations.
+Benefits summary accurate as of January 1, 2025.
+
+Classification: PARTLY RELEVANT (identifies the plan and year; no deductible amount)
+
+
+--- CHUNK 2 of 4 ---------------------------------------------
+source_document:   Gold_PPO_2025.pdf
+plan_type:         Gold PPO
+plan_year:         2025
+authority_status:  Approved
+jurisdiction:      General
+lines:             51-69
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf
+
+pageContent:
+Gold PPO Plan * PLAN-001 * Benefits Summary Page 3
+2. Cost-Sharing Summary
+Cost-Sharing Element In-Network Out-of-Network
+Annual Deductible (Individual) $1,000 $2,000
+Annual Deductible (Family) $2,000 $4,000
+Out-of-Pocket Maximum (Individual) $6,000 $12,000
+Out-of-Pocket Maximum (Family) $12,000 $24,000
+Coinsurance (after deductible) 20% 40%
+Primary Care Copay $25 Not covered
+Specialist Copay $50 Not covered
+Cost-sharing amounts may apply according to service category, network status, deductible, and applicable coinsurance.
+3. Exclusions & Limitations
+The following services are NOT covered under this plan, subject to the stated exceptions or limitations:
+- Cosmetic surgery (unless medically necessary)
+- Experimental or investigational treatments
+- Infertility treatments (excluding diagnostic testing)
+- Weight loss surgery (unless BMI >= 40 with comorbidities)
+- Acupuncture and chiropractic care (limited to 20 visits/year)
+- Routine eye exams and glasses (for members under 18 only)
+
+Classification: DIRECTLY RELEVANT (contains the Gold PPO 2025 deductible table)
+
+
+--- CHUNK 3 of 4 ---------------------------------------------
+source_document:   Gold_PPO_2025.pdf
+plan_type:         Gold PPO
+plan_year:         2025
+authority_status:  Approved
+jurisdiction:      General
+lines:             93-97
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-001_Gold_PPO_Benefits_2025.pdf
+
+pageContent:
+- Benefits are subject to change with 60 days' notice
+- This document is a summary and does not replace the formal policy document
+Reference This benefits summary is accurate as of January 1, 2025. For complete details, refer to
+your Evidence of Coverage (EOC) document.
+Gold PPO * PLAN-001 * 2025 Benefits Booklet
+
+Classification: IRRELEVANT (closing notes; no deductible information)
+
+
+--- CHUNK 4 of 4 ---------------------------------------------
+source_document:   Silver_HMO_2024.pdf
+plan_type:         Silver HMO
+plan_year:         2024
+authority_status:  Superseded
+jurisdiction:      General
+lines:             45-65
+source_url:        https://raw.githubusercontent.com/Freh-dev/dsba6171-healthtech-domain-project/main/data/documents/source/HLT-POL-002_Silver_HMO_Benefits_2024.pdf
+
+pageContent:
+Silver HMO Plan * PLAN-002 * 2024 Benefits Summary Page 3
+3. Cost-Sharing Summary
+Cost-Sharing Element In-Network Out-of-Network
+Annual Deductible (Individual) $2,500 Not covered
+Annual Deductible (Family) $5,000 Not covered
+Out-of-Pocket Maximum (Individual) $8,000 Not covered
+Out-of-Pocket Maximum (Family) $16,000 Not covered
+Coinsurance (after deductible) 30% Not covered
+Primary Care Copay $35 Not covered
+Specialist Copay $70 Not covered
+4. Exclusions & Limitations
+Same exclusions as Gold PPO, plus:
+- Out-of-network services are not covered (except emergencies)
+- Referral must be obtained before specialist visit
+- Services without referral will be denied
+- Cosmetic surgery (unless medically necessary)
+- Experimental or investigational treatments
+- Infertility treatments (excluding diagnostic testing)
+- Weight loss surgery (unless BMI >= 40 with comorbidities)
+- Acupuncture and chiropractic care (limited to 20 visits/year)
+- Routine eye exams and glasses (for members under 18 only)
+
+Classification: IRRELEVANT / INAPPLICABLE (wrong plan and wrong year; superseded document)
+
+
+SUMMARY
+=======
+Chunks from Gold PPO 2025 (Approved): 3 of 4   |   Directly relevant: 1 of 4
+Superseded / wrong-plan chunk reached the AI: yes (chunk 4, Silver HMO 2024)
+Final answer: correct ($1,000 individual in-network, Gold PPO 2025, Approved); Silver HMO figure ($2,500) not used.
+
+Note: Special characters (bullets, >=) were normalized to plain text in this file.
+The original n8n output is the source of record.
